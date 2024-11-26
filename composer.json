@@ -1,28 +1,285 @@
 {
     "require": {
         "php": "~7.4 || ~8",
+        "composer/installers": "~1.0",
         "cweagans/composer-patches": ">=1.7",
         "civicrm/civicrm-core": "dev-master",
         "civicrm/civicrm-packages": "dev-master",
-        "civicrm/civicrm-asset-plugin": "~1.1"
+        "civicrm/civicrm-asset-plugin": "~1.1",
+        "civicrm/action-provider": "dev-master",
+        "civicrm/advancedlogtables": "dev-master",
+        "civicrm/banking": "dev-master",
+        "civicrm/civirules": "dev-master",
+        "civicrm/extendedreport": "dev-master",
+        "civicrm/form-processor": "dev-main",
+        "civicrm/mjwshared": "dev-master",
+        "civicrm/smsapi": "dev-main",
+        "civicrm/sqltasks": "dev-master",
+        "greenpeace-cee/adyen": "dev-main",
+        "greenpeace-cee/bankingcustom": "dev-master",
+        "greenpeace-cee/bic": "dev-master",
+        "greenpeace-cee/blocklist": "dev-main",
+        "greenpeace-cee/bpk": "dev-master",
+        "greenpeace-cee/campaign": "dev-master",
+        "greenpeace-cee/casetools": "dev-master",
+        "greenpeace-cee/contacteditor": "dev-master",
+        "greenpeace-cee/contactinactive": "dev-master",
+        "greenpeace-cee/contract": "dev-master",
+        "greenpeace-cee/dataro": "dev-main",
+        "greenpeace-cee/doctorwhen": "dev-master",
+        "greenpeace-cee/donutapp": "dev-master",
+        "greenpeace-cee/droptrigger": "dev-master",
+        "greenpeace-cee/exportpermission": "dev-master",
+        "greenpeace-cee/fastactivity": "dev-master",
+        "greenpeace-cee/gpapi": "dev-master",
+        "greenpeace-cee/hlrlookup": "dev-master",
+        "greenpeace-cee/identitytracker": "dev-master",
+        "greenpeace-cee/mailingwork": "dev-master",
+        "greenpeace-cee/mailutils": "dev-master",
+        "greenpeace-cee/mtms": "dev-master",
+        "greenpeace-cee/normalize": "dev-master",
+        "greenpeace-cee/postcodeat": "dev-master",
+        "greenpeace-cee/pspsepa": "dev-master",
+        "greenpeace-cee/rcont": "dev-master",
+        "greenpeace-cee/recentmenu": "dev-master",
+        "greenpeace-cee/segmentation": "dev-master",
+        "greenpeace-cee/sepa": "dev-upstream",
+        "greenpeace-cee/sepacustom": "dev-master",
+        "greenpeace-cee/streetimport": "dev-master",
+        "greenpeace-cee/supportcase": "dev-master",
+        "greenpeace-cee/uimods": "dev-master",
+        "greenpeace-cee/webshoptools": "dev-master",
+        "greenpeace-cee/websms": "dev-master",
+        "greenpeace-cee/xcm": "dev-master",
+        "greenpeace-cee/xcmtools": "dev-master",
+        "greenpeace-cee/xdedupe": "dev-master",
+        "systopia/de.systopia.civioffice": "dev-master"
     },
     "config": {
         "preferred-install": "source",
+        "use-github-api": false,
         "allow-plugins": {
             "civicrm/civicrm-asset-plugin": true,
             "cweagans/composer-patches": true,
             "civicrm/composer-downloads-plugin": true,
-            "civicrm/composer-compile-plugin": true
+            "civicrm/composer-compile-plugin": true,
+            "composer/installers": true
         }
     },
     "extra": {
-        "compile-whitelist": ["civicrm/civicrm-core", "civicrm/composer-compile-lib"],
+        "compile-whitelist": [
+            "civicrm/civicrm-core",
+            "civicrm/composer-compile-lib"
+        ],
         "enable-patching": "true",
         "civicrm-asset": {
             "path": "public/assets",
             "url": "/public/assets"
+        },
+        "installer-paths": {
+            "web/ext/{$name}/": [
+                "civicrm-ext"
+            ]
         }
     },
     "prefer-stable": true,
-    "minimum-stability": "dev"
+    "minimum-stability": "dev",
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "git@github.com:greenpeace-cee/adyen.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:greenpeace-cee/at.greenpeace.advancedlogtables.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:greenpeace-cee/at.greenpeace.bankingcustom.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:greenpeace-cee/at.greenpeace.casetools.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:greenpeace-cee/at.greenpeace.donutapp.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:greenpeace-cee/at.greenpeace.droptrigger.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:greenpeace-cee/at.greenpeace.gpapi.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:greenpeace-cee/at.greenpeace.mailingwork.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:greenpeace-cee/at.greenpeace.sepacustom.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:greenpeace-cee/at.greenpeace.uimods.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:greenpeace-cee/be.aivl.streetimport.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:greenpeace-cee/blocklist.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:greenpeace-cee/civirules.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:greenpeace-cee/com.cividesk.normalize.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:greenpeace-cee/dataro"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:greenpeace-cee/de.systopia.bpk.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:greenpeace-cee/de.systopia.campaign.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:greenpeace-cee/de.systopia.civioffice.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:greenpeace-cee/de.systopia.contactinactive.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:greenpeace-cee/de.systopia.contract.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:greenpeace-cee/de.systopia.fastactivity.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:greenpeace-cee/de.systopia.identitytracker.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:greenpeace-cee/de.systopia.postcodeat.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:greenpeace-cee/de.systopia.pspsepa.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:greenpeace-cee/de.systopia.rcont.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:greenpeace-cee/de.systopia.segmentation.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:greenpeace-cee/de.systopia.sqltasks.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:greenpeace-cee/de.systopia.xcm.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:greenpeace-cee/de.systopia.xdedupe.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:greenpeace-cee/hlrlookup.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:greenpeace-cee/mailingwork.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:greenpeace-cee/mailutils.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:greenpeace-cee/mjwshared.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:greenpeace-cee/mtms.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:greenpeace-cee/net.ourpowerbase.exportpermission.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:greenpeace-cee/nz.co.fuzion.extendedreport.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:greenpeace-cee/org.civicoop.smsapi.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:greenpeace-cee/org.civicrm.doctorwhen.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:greenpeace-cee/org.civicrm.recentmenu.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:greenpeace-cee/org.project60.banking.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:greenpeace-cee/org.project60.bic.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:greenpeace-cee/org.project60.sepa.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:greenpeace-cee/org.wikimedia.contacteditor.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:greenpeace-cee/supportcase.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:greenpeace-cee/webshoptools.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:greenpeace-cee/websms.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:greenpeace-cee/xcmtools.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://lab.civicrm.org/extensions/action-provider.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://lab.civicrm.org/extensions/form-processor.git"
+        }
+    ]
 }

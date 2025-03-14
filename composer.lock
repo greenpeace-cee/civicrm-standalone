@@ -2964,17 +2964,17 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:greenpeace-cee/webshoptools.git",
-                "reference": "3ea1f279063ac47784cbe9f71d31392c9f0c4d7c"
+                "reference": "737e728f74be3cff82e9e996e046a78069916d15"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/greenpeace-cee/webshoptools/zipball/3ea1f279063ac47784cbe9f71d31392c9f0c4d7c",
-                "reference": "3ea1f279063ac47784cbe9f71d31392c9f0c4d7c",
+                "url": "https://api.github.com/repos/greenpeace-cee/webshoptools/zipball/737e728f74be3cff82e9e996e046a78069916d15",
+                "reference": "737e728f74be3cff82e9e996e046a78069916d15",
                 "shasum": ""
             },
             "default-branch": true,
             "type": "civicrm-ext",
-            "time": "2024-12-11T13:56:53+00:00"
+            "time": "2025-03-14T18:54:26+00:00"
         },
         {
             "name": "greenpeace-cee/websms",

@@ -3,13 +3,12 @@
 *~
 *.bak
 
-# composer lockfile and installed packages
-/composer.lock
+# installed packages
 /vendor
 
 # site data
 /private
 /public
-/extensions
+/ext
 
 

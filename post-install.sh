@@ -104,7 +104,7 @@ cv api4 SepaCreditor.create \
     +v uses_bic="0"
 
 cv api4 Setting.set \
-    +v batching_default_creditor="1" \
+    +v batching_default_creditor="2" \
     +v allow_mandate_modification="0" \
     +v batching_FRST_notice="1" \
     +v batching_OOFF_horizon="7" \

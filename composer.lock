@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0438663dbfa42587e85674f3b70be5db",
+    "content-hash": "4addc099868efa56ede0885a7ab960a5",
     "packages": [
         {
             "name": "adrienrn/php-mimetyper",
@@ -277,16 +277,16 @@
         },
         {
             "name": "brick/math",
-            "version": "0.13.0",
+            "version": "0.13.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/brick/math.git",
-                "reference": "efe64d2cd94d410ba85831a6d4c16ac48542751b"
+                "reference": "fc7ed316430118cc7836bf45faff18d5dfc8de04"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/brick/math/zipball/efe64d2cd94d410ba85831a6d4c16ac48542751b",
-                "reference": "efe64d2cd94d410ba85831a6d4c16ac48542751b",
+                "url": "https://api.github.com/repos/brick/math/zipball/fc7ed316430118cc7836bf45faff18d5dfc8de04",
+                "reference": "fc7ed316430118cc7836bf45faff18d5dfc8de04",
                 "shasum": ""
             },
             "require": {
@@ -325,7 +325,7 @@
             ],
             "support": {
                 "issues": "https://github.com/brick/math/issues",
-                "source": "https://github.com/brick/math/tree/0.13.0"
+                "source": "https://github.com/brick/math/tree/0.13.1"
             },
             "funding": [
                 {
@@ -333,7 +333,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-03-03T13:19:29+00:00"
+            "time": "2025-03-29T13:50:30+00:00"
         },
         {
             "name": "brick/money",
@@ -398,7 +398,7 @@
             "source": {
                 "type": "git",
                 "url": "https://lab.civicrm.org/extensions/action-provider.git",
-                "reference": "53bddc2da12815b3eaadd9d82244b624f5e4691d"
+                "reference": "eac48f3c5b9fc8a95e130075ef3d8dd05f2be5d0"
             },
             "require": {
                 "ext-json": "*"
@@ -406,7 +406,7 @@
             "default-branch": true,
             "type": "civicrm-ext",
             "description": "Action Provider",
-            "time": "2025-03-03T15:39:14+00:00"
+            "time": "2025-03-19T08:50:27+00:00"
         },
         {
             "name": "civicrm/advancedlogtables",
@@ -1295,12 +1295,12 @@
             "source": {
                 "type": "git",
                 "url": "https://lab.civicrm.org/extensions/form-processor.git",
-                "reference": "1a0337a6e2992aec89e37c2f6501e44936853f78"
+                "reference": "86379d0f9ae734f5410c6a336b84a99b82b8af21"
             },
             "default-branch": true,
             "type": "civicrm-ext",
             "description": "Form Processor",
-            "time": "2025-02-12T15:41:18+00:00"
+            "time": "2025-03-18T10:46:20+00:00"
         },
         {
             "name": "civicrm/gitignore",
@@ -2362,17 +2362,17 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:greenpeace-cee/de.systopia.contract.git",
-                "reference": "c511010e3a6f4d0c94385a057e52d930a366f90d"
+                "reference": "15ad84344a5687352fb2000be196571ea4f5632a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/greenpeace-cee/de.systopia.contract/zipball/c511010e3a6f4d0c94385a057e52d930a366f90d",
-                "reference": "c511010e3a6f4d0c94385a057e52d930a366f90d",
+                "url": "https://api.github.com/repos/greenpeace-cee/de.systopia.contract/zipball/15ad84344a5687352fb2000be196571ea4f5632a",
+                "reference": "15ad84344a5687352fb2000be196571ea4f5632a",
                 "shasum": ""
             },
             "default-branch": true,
             "type": "civicrm-ext",
-            "time": "2025-03-14T13:52:38+00:00"
+            "time": "2025-03-31T10:42:29+00:00"
         },
         {
             "name": "greenpeace-cee/dataro",
@@ -2415,12 +2415,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:greenpeace-cee/at.greenpeace.donutapp.git",
-                "reference": "808bd2cf7157a2f445ba36aaf48dc6ac376aa495"
+                "reference": "e627f70e9fa06131970e88b573d2d44265f2d0fd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/greenpeace-cee/at.greenpeace.donutapp/zipball/808bd2cf7157a2f445ba36aaf48dc6ac376aa495",
-                "reference": "808bd2cf7157a2f445ba36aaf48dc6ac376aa495",
+                "url": "https://api.github.com/repos/greenpeace-cee/at.greenpeace.donutapp/zipball/e627f70e9fa06131970e88b573d2d44265f2d0fd",
+                "reference": "e627f70e9fa06131970e88b573d2d44265f2d0fd",
                 "shasum": ""
             },
             "require": {
@@ -2429,7 +2429,7 @@
             },
             "default-branch": true,
             "type": "civicrm-ext",
-            "time": "2025-03-11T14:50:42+00:00"
+            "time": "2025-03-24T11:04:03+00:00"
         },
         {
             "name": "greenpeace-cee/droptrigger",
@@ -2545,12 +2545,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:greenpeace-cee/google_drive.git",
-                "reference": "c1f6ea7f3b59686b3d615d000559418cabe78473"
+                "reference": "f4cf6bf83012d52967ac061e05e532e91f30a0ea"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/greenpeace-cee/google_drive/zipball/c1f6ea7f3b59686b3d615d000559418cabe78473",
-                "reference": "c1f6ea7f3b59686b3d615d000559418cabe78473",
+                "url": "https://api.github.com/repos/greenpeace-cee/google_drive/zipball/f4cf6bf83012d52967ac061e05e532e91f30a0ea",
+                "reference": "f4cf6bf83012d52967ac061e05e532e91f30a0ea",
                 "shasum": ""
             },
             "require": {
@@ -2567,7 +2567,7 @@
                     "email": "pfigel@greenpeace.org"
                 }
             ],
-            "time": "2025-02-14T13:17:14+00:00"
+            "time": "2025-03-31T13:26:09+00:00"
         },
         {
             "name": "greenpeace-cee/gpapi",
@@ -2622,6 +2622,38 @@
             "default-branch": true,
             "type": "civicrm-ext",
             "time": "2024-12-11T13:43:31+00:00"
+        },
+        {
+            "name": "greenpeace-cee/iap_auth",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:greenpeace-cee/iap_auth.git",
+                "reference": "185d5dab56061a7ad08ba303fa18aea2b82049d6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/greenpeace-cee/iap_auth/zipball/185d5dab56061a7ad08ba303fa18aea2b82049d6",
+                "reference": "185d5dab56061a7ad08ba303fa18aea2b82049d6",
+                "shasum": ""
+            },
+            "require": {
+                "google/auth": "^1.46",
+                "kelvinmo/simplejwt": "^0.2"
+            },
+            "default-branch": true,
+            "type": "civicrm-ext",
+            "license": [
+                "AGPL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Patrick Figel",
+                    "email": "pfigel@greenpeace.org"
+                }
+            ],
+            "description": "Google Cloud Identity-Aware Proxy Authentication for CiviCRM Standalone",
+            "time": "2025-04-01T14:33:37+00:00"
         },
         {
             "name": "greenpeace-cee/identitytracker",
@@ -2910,17 +2942,17 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:greenpeace-cee/superset.git",
-                "reference": "9a7ef57f76e42026778879f7a65f4fc29ae407aa"
+                "reference": "477ca0c656e0c196fdd1449024a676b58cfa23a0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/greenpeace-cee/superset/zipball/9a7ef57f76e42026778879f7a65f4fc29ae407aa",
-                "reference": "9a7ef57f76e42026778879f7a65f4fc29ae407aa",
+                "url": "https://api.github.com/repos/greenpeace-cee/superset/zipball/477ca0c656e0c196fdd1449024a676b58cfa23a0",
+                "reference": "477ca0c656e0c196fdd1449024a676b58cfa23a0",
                 "shasum": ""
             },
             "default-branch": true,
             "type": "civicrm-ext",
-            "time": "2025-02-17T16:08:31+00:00"
+            "time": "2025-03-18T13:19:07+00:00"
         },
         {
             "name": "greenpeace-cee/supportcase",
@@ -2946,17 +2978,17 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:greenpeace-cee/at.greenpeace.uimods.git",
-                "reference": "e57345dc2c85af96dd4f6f83a504b02b980c846c"
+                "reference": "dc3bb2717083b04ba111f0fc5a9bcf808fbb075a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/greenpeace-cee/at.greenpeace.uimods/zipball/e57345dc2c85af96dd4f6f83a504b02b980c846c",
-                "reference": "e57345dc2c85af96dd4f6f83a504b02b980c846c",
+                "url": "https://api.github.com/repos/greenpeace-cee/at.greenpeace.uimods/zipball/dc3bb2717083b04ba111f0fc5a9bcf808fbb075a",
+                "reference": "dc3bb2717083b04ba111f0fc5a9bcf808fbb075a",
                 "shasum": ""
             },
             "default-branch": true,
             "type": "civicrm-ext",
-            "time": "2025-03-11T15:01:31+00:00"
+            "time": "2025-03-18T13:21:28+00:00"
         },
         {
             "name": "greenpeace-cee/webshoptools",
@@ -3053,16 +3085,16 @@
         },
         {
             "name": "guzzlehttp/guzzle",
-            "version": "7.9.2",
+            "version": "7.9.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/guzzle.git",
-                "reference": "d281ed313b989f213357e3be1a179f02196ac99b"
+                "reference": "7b2f29fe81dc4da0ca0ea7d42107a0845946ea77"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/d281ed313b989f213357e3be1a179f02196ac99b",
-                "reference": "d281ed313b989f213357e3be1a179f02196ac99b",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/7b2f29fe81dc4da0ca0ea7d42107a0845946ea77",
+                "reference": "7b2f29fe81dc4da0ca0ea7d42107a0845946ea77",
                 "shasum": ""
             },
             "require": {
@@ -3159,7 +3191,7 @@
             ],
             "support": {
                 "issues": "https://github.com/guzzle/guzzle/issues",
-                "source": "https://github.com/guzzle/guzzle/tree/7.9.2"
+                "source": "https://github.com/guzzle/guzzle/tree/7.9.3"
             },
             "funding": [
                 {
@@ -3175,20 +3207,20 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-07-24T11:22:20+00:00"
+            "time": "2025-03-27T13:37:11+00:00"
         },
         {
             "name": "guzzlehttp/promises",
-            "version": "2.0.4",
+            "version": "2.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/promises.git",
-                "reference": "f9c436286ab2892c7db7be8c8da4ef61ccf7b455"
+                "reference": "7c69f28996b0a6920945dd20b3857e499d9ca96c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/promises/zipball/f9c436286ab2892c7db7be8c8da4ef61ccf7b455",
-                "reference": "f9c436286ab2892c7db7be8c8da4ef61ccf7b455",
+                "url": "https://api.github.com/repos/guzzle/promises/zipball/7c69f28996b0a6920945dd20b3857e499d9ca96c",
+                "reference": "7c69f28996b0a6920945dd20b3857e499d9ca96c",
                 "shasum": ""
             },
             "require": {
@@ -3242,7 +3274,7 @@
             ],
             "support": {
                 "issues": "https://github.com/guzzle/promises/issues",
-                "source": "https://github.com/guzzle/promises/tree/2.0.4"
+                "source": "https://github.com/guzzle/promises/tree/2.2.0"
             },
             "funding": [
                 {
@@ -3258,20 +3290,20 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-10-17T10:06:22+00:00"
+            "time": "2025-03-27T13:27:01+00:00"
         },
         {
             "name": "guzzlehttp/psr7",
-            "version": "2.7.0",
+            "version": "2.7.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/psr7.git",
-                "reference": "a70f5c95fb43bc83f07c9c948baa0dc1829bf201"
+                "reference": "c2270caaabe631b3b44c85f99e5a04bbb8060d16"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/psr7/zipball/a70f5c95fb43bc83f07c9c948baa0dc1829bf201",
-                "reference": "a70f5c95fb43bc83f07c9c948baa0dc1829bf201",
+                "url": "https://api.github.com/repos/guzzle/psr7/zipball/c2270caaabe631b3b44c85f99e5a04bbb8060d16",
+                "reference": "c2270caaabe631b3b44c85f99e5a04bbb8060d16",
                 "shasum": ""
             },
             "require": {
@@ -3358,7 +3390,7 @@
             ],
             "support": {
                 "issues": "https://github.com/guzzle/psr7/issues",
-                "source": "https://github.com/guzzle/psr7/tree/2.7.0"
+                "source": "https://github.com/guzzle/psr7/tree/2.7.1"
             },
             "funding": [
                 {
@@ -3374,7 +3406,65 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-07-18T11:15:46+00:00"
+            "time": "2025-03-27T12:30:47+00:00"
+        },
+        {
+            "name": "kelvinmo/simplejwt",
+            "version": "v0.2.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kelvinmo/simplejwt.git",
+                "reference": "c7e2c81d15b4f87c9c122f88a80ce5d90977f62b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kelvinmo/simplejwt/zipball/c7e2c81d15b4f87c9c122f88a80ce5d90977f62b",
+                "reference": "c7e2c81d15b4f87c9c122f88a80ce5d90977f62b",
+                "shasum": ""
+            },
+            "require": {
+                "ext-hash": "*",
+                "ext-openssl": "*",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "ext-bz2": "*",
+                "ext-phar": "*",
+                "phing/phing": "2.*",
+                "phpunit/phpunit": "4.*",
+                "symfony/console": "2.7.*"
+            },
+            "bin": [
+                "bin/jwkstool.phar"
+            ],
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "SimpleJWT\\": "src/SimpleJWT"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Kelvin Mo",
+                    "email": "kmo@users.sourceforge.net"
+                }
+            ],
+            "description": "An simple JSON Web Token library for PHP.",
+            "homepage": "https://github.com/kelvinmo/simplejwt",
+            "keywords": [
+                "JOSE",
+                "JWE",
+                "jwt"
+            ],
+            "support": {
+                "issues": "https://github.com/kelvinmo/simplejwt/issues",
+                "source": "https://github.com/kelvinmo/simplejwt/tree/master"
+            },
+            "time": "2019-06-14T11:01:39+00:00"
         },
         {
             "name": "knplabs/knp-snappy",
@@ -6029,16 +6119,16 @@
         },
         {
             "name": "sabberworm/php-css-parser",
-            "version": "v8.7.0",
+            "version": "v8.8.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/MyIntervals/PHP-CSS-Parser.git",
-                "reference": "f414ff953002a9b18e3a116f5e462c56f21237cf"
+                "reference": "3de493bdddfd1f051249af725c7e0d2c38fed740"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/MyIntervals/PHP-CSS-Parser/zipball/f414ff953002a9b18e3a116f5e462c56f21237cf",
-                "reference": "f414ff953002a9b18e3a116f5e462c56f21237cf",
+                "url": "https://api.github.com/repos/MyIntervals/PHP-CSS-Parser/zipball/3de493bdddfd1f051249af725c7e0d2c38fed740",
+                "reference": "3de493bdddfd1f051249af725c7e0d2c38fed740",
                 "shasum": ""
             },
             "require": {
@@ -6046,7 +6136,7 @@
                 "php": "^5.6.20 || ^7.0.0 || ~8.0.0 || ~8.1.0 || ~8.2.0 || ~8.3.0 || ~8.4.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "5.7.27 || 6.5.14 || 7.5.20 || 8.5.40"
+                "phpunit/phpunit": "5.7.27 || 6.5.14 || 7.5.20 || 8.5.41"
             },
             "suggest": {
                 "ext-mbstring": "for parsing UTF-8 CSS"
@@ -6088,9 +6178,9 @@
             ],
             "support": {
                 "issues": "https://github.com/MyIntervals/PHP-CSS-Parser/issues",
-                "source": "https://github.com/MyIntervals/PHP-CSS-Parser/tree/v8.7.0"
+                "source": "https://github.com/MyIntervals/PHP-CSS-Parser/tree/v8.8.0"
             },
-            "time": "2024-10-27T17:38:32+00:00"
+            "time": "2025-03-23T17:59:05+00:00"
         },
         {
             "name": "scssphp/scssphp",
@@ -6369,16 +6459,16 @@
         },
         {
             "name": "symfony/dependency-injection",
-            "version": "v6.4.19",
+            "version": "v6.4.20",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/dependency-injection.git",
-                "reference": "b343c3b2f1539fe41331657b37d5c96c1d1ea842"
+                "reference": "c49796a9184a532843e78e50df9e55708b92543a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/dependency-injection/zipball/b343c3b2f1539fe41331657b37d5c96c1d1ea842",
-                "reference": "b343c3b2f1539fe41331657b37d5c96c1d1ea842",
+                "url": "https://api.github.com/repos/symfony/dependency-injection/zipball/c49796a9184a532843e78e50df9e55708b92543a",
+                "reference": "c49796a9184a532843e78e50df9e55708b92543a",
                 "shasum": ""
             },
             "require": {
@@ -6386,7 +6476,7 @@
                 "psr/container": "^1.1|^2.0",
                 "symfony/deprecation-contracts": "^2.5|^3",
                 "symfony/service-contracts": "^2.5|^3.0",
-                "symfony/var-exporter": "^6.2.10|^7.0"
+                "symfony/var-exporter": "^6.4.20|^7.2.5"
             },
             "conflict": {
                 "ext-psr": "<1.1|>=2",
@@ -6430,7 +6520,7 @@
             "description": "Allows you to standardize and centralize the way objects are constructed in your application",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/dependency-injection/tree/v6.4.19"
+                "source": "https://github.com/symfony/dependency-injection/tree/v6.4.20"
             },
             "funding": [
                 {
@@ -6446,7 +6536,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-02-20T10:02:49+00:00"
+            "time": "2025-03-13T09:55:08+00:00"
         },
         {
             "name": "symfony/deprecation-contracts",
@@ -7274,16 +7364,16 @@
         },
         {
             "name": "symfony/process",
-            "version": "v6.4.19",
+            "version": "v6.4.20",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/process.git",
-                "reference": "7a1c12e87b08ec9c97abdd188c9b3f5a40e37fc3"
+                "reference": "e2a61c16af36c9a07e5c9906498b73e091949a20"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/process/zipball/7a1c12e87b08ec9c97abdd188c9b3f5a40e37fc3",
-                "reference": "7a1c12e87b08ec9c97abdd188c9b3f5a40e37fc3",
+                "url": "https://api.github.com/repos/symfony/process/zipball/e2a61c16af36c9a07e5c9906498b73e091949a20",
+                "reference": "e2a61c16af36c9a07e5c9906498b73e091949a20",
                 "shasum": ""
             },
             "require": {
@@ -7315,7 +7405,7 @@
             "description": "Executes commands in sub-processes",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/process/tree/v6.4.19"
+                "source": "https://github.com/symfony/process/tree/v6.4.20"
             },
             "funding": [
                 {
@@ -7331,7 +7421,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-02-04T13:35:48+00:00"
+            "time": "2025-03-10T17:11:00+00:00"
         },
         {
             "name": "symfony/service-contracts",
@@ -7503,16 +7593,16 @@
         },
         {
             "name": "symfony/var-exporter",
-            "version": "v6.4.19",
+            "version": "v6.4.20",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/var-exporter.git",
-                "reference": "be6e71b0c257884c1107313de5d247741cfea172"
+                "reference": "998df255e9e6a15a36ae35e9c6cd818c17cf92a2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/var-exporter/zipball/be6e71b0c257884c1107313de5d247741cfea172",
-                "reference": "be6e71b0c257884c1107313de5d247741cfea172",
+                "url": "https://api.github.com/repos/symfony/var-exporter/zipball/998df255e9e6a15a36ae35e9c6cd818c17cf92a2",
+                "reference": "998df255e9e6a15a36ae35e9c6cd818c17cf92a2",
                 "shasum": ""
             },
             "require": {
@@ -7560,7 +7650,7 @@
                 "serialize"
             ],
             "support": {
-                "source": "https://github.com/symfony/var-exporter/tree/v6.4.19"
+                "source": "https://github.com/symfony/var-exporter/tree/v6.4.20"
             },
             "funding": [
                 {
@@ -7576,7 +7666,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-02-13T09:33:32+00:00"
+            "time": "2025-03-13T09:55:08+00:00"
         },
         {
             "name": "systopia/de.systopia.civioffice",
@@ -7705,16 +7795,16 @@
         },
         {
             "name": "tecnickcom/tcpdf",
-            "version": "6.8.2",
+            "version": "6.9.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tecnickcom/TCPDF.git",
-                "reference": "f7a781073e1645062f163e058139e2f89355d420"
+                "reference": "f67b761b61f2370a9000d98c3b9111284544f722"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tecnickcom/TCPDF/zipball/f7a781073e1645062f163e058139e2f89355d420",
-                "reference": "f7a781073e1645062f163e058139e2f89355d420",
+                "url": "https://api.github.com/repos/tecnickcom/TCPDF/zipball/f67b761b61f2370a9000d98c3b9111284544f722",
+                "reference": "f67b761b61f2370a9000d98c3b9111284544f722",
                 "shasum": ""
             },
             "require": {
@@ -7727,8 +7817,6 @@
                     "config",
                     "include",
                     "tcpdf.php",
-                    "tcpdf_parser.php",
-                    "tcpdf_import.php",
                     "tcpdf_barcodes_1d.php",
                     "tcpdf_barcodes_2d.php",
                     "include/tcpdf_colors.php",
@@ -7766,7 +7854,7 @@
             ],
             "support": {
                 "issues": "https://github.com/tecnickcom/TCPDF/issues",
-                "source": "https://github.com/tecnickcom/TCPDF/tree/6.8.2"
+                "source": "https://github.com/tecnickcom/TCPDF/tree/6.9.0"
             },
             "funding": [
                 {
@@ -7774,7 +7862,7 @@
                     "type": "custom"
                 }
             ],
-            "time": "2025-01-26T14:03:12+00:00"
+            "time": "2025-03-30T16:56:09+00:00"
         },
         {
             "name": "totten/ca-config",
@@ -8334,6 +8422,7 @@
         "greenpeace-cee/gpapi": 20,
         "greenpeace-cee/greenpeace_contribute": 20,
         "greenpeace-cee/hlrlookup": 20,
+        "greenpeace-cee/iap_auth": 20,
         "greenpeace-cee/identitytracker": 20,
         "greenpeace-cee/mailingwork": 20,
         "greenpeace-cee/mailutils": 20,
@@ -8363,8 +8452,11 @@
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
-        "php": "~7.4 || ~8"
+        "php": "~8.1"
     },
     "platform-dev": {},
+    "platform-overrides": {
+        "php": "8.1"
+    },
     "plugin-api-version": "2.6.0"
 }

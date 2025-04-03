@@ -1,0 +1,15 @@
+diff --git a/api/v3/EntityTag.php b/api/v3/EntityTag.php
+index 39a6f8ace4..4512503510 100644
+--- a/api/v3/EntityTag.php
++++ b/api/v3/EntityTag.php
+@@ -155,10 +155,6 @@ function _civicrm_api3_entity_tag_common($params, $op = 'add') {
+       $values['not_removed'] += $nr;
+     }
+   }
+-  if (empty($values['added']) && empty($values['removed'])) {
+-    $values['is_error'] = 1;
+-    $values['error_message'] = "Unable to $op tags";
+-  }
+   return $values;
+ }
+ 

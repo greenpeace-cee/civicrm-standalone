@@ -86,6 +86,19 @@
             "civicrm/composer-compile-lib"
         ],
         "enable-patching": "true",
+        "patches": {
+            "civicrm/civicrm-core": {
+                "Fix error if tag has already been assigned": "patches/GP-2169.patch",
+                "Search for non-primary emails and phones in Quicksearch and EntityRef": "patches/GP-27154.patch",
+                "Fix non-ASCII attachment file names from inbound emails": "patches/GP-28033.patch",
+                "Fix expensive campaign_id lookup in _civicrm_api3_validate_integer": "patches/GP-41852.patch",
+                "Fix default search profile not being applied in Advanced Search and Search Builder": "patches/GP-43955.patch",
+                "Remove deleted contact check in activity target count query": "patches/GP-44653-1.patch",
+                "Add index hint on case role query": "patches/GP-44653-2.patch",
+                "Add index hint on case activity join": "patches/GP-44653-3.patch",
+                "Improve generated table and column names for custom groups": "patches/GP-46928.patch"
+            }
+        },
         "civicrm-asset": {
             "path": "public/assets",
             "url": "/public/assets"

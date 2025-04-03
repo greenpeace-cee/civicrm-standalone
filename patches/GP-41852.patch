@@ -1,0 +1,27 @@
+From 09fc0648c8bf69abcf107f8a863e5215910306e1 Mon Sep 17 00:00:00 2001
+From: Patrick Figel <pfigel@greenpeace.org>
+Date: Mon, 5 Jun 2023 15:52:57 +0200
+Subject: [PATCH] GP-41852 Fix expensive campaign_id lookup in
+ _civicrm_api3_validate_integer
+
+---
+ api/v3/utils.php | 5 ++---
+ 1 file changed, 2 insertions(+), 3 deletions(-)
+
+diff --git a/api/v3/utils.php b/api/v3/utils.php
+index b4b56112697..1046dd0c533 100644
+--- a/api/v3/utils.php
++++ b/api/v3/utils.php
+@@ -2100,10 +2100,9 @@ function _civicrm_api3_validate_integer(&$params, $fieldName, &$fieldInfo, $enti
+       }
+     }
+     if (
+-      !empty($fieldInfo['pseudoconstant']) ||
+-      !empty($fieldInfo['options']) ||
++      (!empty($fieldInfo['pseudoconstant']) || !empty($fieldInfo['options'])) &&
+       // Special case for campaign_id which is no longer a pseudoconstant
+-      ($fieldName === 'campaign_id' && !CRM_Utils_Rule::positiveInteger($fieldValue))
++      !($fieldName === 'campaign_id' && CRM_Utils_Rule::positiveInteger($fieldValue))
+     ) {
+       $additional_lookup_params = [];
+       if (strtolower($entity) === 'address' && $fieldName == 'state_province_id') {

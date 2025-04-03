@@ -1,0 +1,51 @@
+diff --git a/CRM/Core/BAO/CustomField.php b/CRM/Core/BAO/CustomField.php
+index 6e81545bfa..cf17d31ef7 100644
+--- a/CRM/Core/BAO/CustomField.php
++++ b/CRM/Core/BAO/CustomField.php
+@@ -2186,7 +2186,7 @@ WHERE  id IN ( %1, %2 )
+       CRM_Core_DAO::setCreateDefaults($params, self::getDefaults());
+       if (!isset($params['column_name'])) {
+         // if add mode & column_name not present, calculate it.
+-        $params['column_name'] = strtolower(CRM_Utils_String::munge($params['label'], '_', 32));
++        $params['column_name'] = strtolower(CRM_Utils_String::munge($params['label'], '_', 60));
+       }
+       if (!isset($params['name'])) {
+         $params['name'] = CRM_Utils_String::munge($params['label'], '_', 64);
+@@ -2306,7 +2306,17 @@ WHERE  id IN ( %1, %2 )
+     $op = empty($params['id']) ? 'add' : 'modify';
+     if ($op !== 'modify') {
+       if ($params['is_append_field_id_to_column_name']) {
+-        $params['column_name'] .= "_{$customField->id}";
++        // only append field ID if column name already used in this custom group
++        $columNameExists = \Civi\Api4\CustomField::get(FALSE)
++          ->selectRowCount()
++          ->addWhere('id', '<>', $customField->id)
++          ->addWhere('custom_group_id', '=', $customField->custom_group_id)
++          ->addWhere('column_name', '=', $params['column_name'])
++          ->execute()
++          ->count();
++        if ($columNameExists) {
++          $params['column_name'] .= "_{$customField->id}";
++        }
+       }
+       $customField->column_name = $params['column_name'];
+       $customField->save();
+diff --git a/CRM/Core/BAO/CustomGroup.php b/CRM/Core/BAO/CustomGroup.php
+index c9ea430fc5..d9ddb217b6 100644
+--- a/CRM/Core/BAO/CustomGroup.php
++++ b/CRM/Core/BAO/CustomGroup.php
+@@ -174,8 +174,12 @@ class CRM_Core_BAO_CustomGroup extends CRM_Core_DAO_CustomGroup implements \Civi
+     $group->save();
+     if (!isset($params['id'])) {
+       if (!isset($params['table_name'])) {
+-        $munged_title = strtolower(CRM_Utils_String::munge($group->title, '_', 13));
+-        $tableName = "civicrm_value_{$munged_title}_{$group->id}";
++        $munged_title = strtolower(CRM_Utils_String::munge($group->title, '_', 45));
++        $tableName = "civicrm_value_{$munged_title}";
++        // only add custom group ID if table name is not unique at this point
++        if (CRM_Core_DAO::checkTableExists($tableName)) {
++          $tableName .= '_{$group->id}';
++        }
+       }
+       $group->table_name = $tableName;
+       CRM_Core_DAO::setFieldValue('CRM_Core_DAO_CustomGroup',

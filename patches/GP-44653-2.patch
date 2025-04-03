@@ -1,0 +1,13 @@
+diff --git a/CRM/Case/BAO/Case.php b/CRM/Case/BAO/Case.php
+index b2a0db357b..0a98752b2c 100644
+--- a/CRM/Case/BAO/Case.php
++++ b/CRM/Case/BAO/Case.php
+@@ -806,7 +806,7 @@ SELECT civicrm_case.id, case_status.label AS case_status, status_id, civicrm_cas
+             IF(rel.contact_id_a = %1, civicrm_relationship_type.label_a_b, civicrm_relationship_type.label_b_a) as relation,
+             civicrm_relationship_type.id as relation_type,
+             IF(rel.contact_id_a = %1, "a_b", "b_a") as relationship_direction
+-      FROM  civicrm_relationship rel
++      FROM  civicrm_relationship rel USE INDEX (FK_civicrm_relationship_case_id)
+  INNER JOIN  civicrm_relationship_type ON rel.relationship_type_id = civicrm_relationship_type.id
+  INNER JOIN  civicrm_contact con ON ((con.id <> %1 AND con.id IN (rel.contact_id_a, rel.contact_id_b)) OR (con.id = %1 AND rel.contact_id_b = rel.contact_id_a AND rel.contact_id_a = %1 AND rel.is_active))
+  LEFT JOIN  civicrm_phone ON (civicrm_phone.contact_id = con.id AND civicrm_phone.is_primary = 1)

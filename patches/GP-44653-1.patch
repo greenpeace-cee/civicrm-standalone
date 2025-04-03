@@ -1,0 +1,12 @@
+diff --git a/CRM/Activity/BAO/Activity.php b/CRM/Activity/BAO/Activity.php
+index b2febd9bca..c0fcd94a2c 100644
+--- a/CRM/Activity/BAO/Activity.php
++++ b/CRM/Activity/BAO/Activity.php
+@@ -667,7 +667,6 @@ class CRM_Activity_BAO_Activity extends CRM_Activity_DAO_Activity {
+       $targetCount = CRM_Core_DAO::executeQuery('
+       SELECT activity_id, count(*) as target_contact_count
+       FROM civicrm_activity_contact
+-      INNER JOIN civicrm_contact c ON contact_id = c.id AND c.is_deleted = 0
+       WHERE activity_id IN (' . implode(',', array_keys($result)) . ')
+       AND record_type_id = %1
+       GROUP BY activity_id', [

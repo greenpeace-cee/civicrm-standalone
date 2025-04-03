@@ -1,0 +1,15 @@
+diff --git a/CRM/Contact/BAO/Query.php b/CRM/Contact/BAO/Query.php
+index cdde954b26..bb2886c7d7 100644
+--- a/CRM/Contact/BAO/Query.php
++++ b/CRM/Contact/BAO/Query.php
+@@ -3496,8 +3496,8 @@ WHERE  $smartGroupClause
+         $wc = "contact_a.nick_name";
+         $fieldsub[] = " ( $wc $op $value )";
+       }
+-      if ($config->includeEmailInName) {
+-        $fieldsub[] = " ( civicrm_email.email $op $value ) ";
++      if ($config->includeEmailInName && strpos($value, '@') !== FALSE) {
++        $fieldsub[] = " ( contact_a.id IN (SELECT civicrm_email.contact_id FROM civicrm_email WHERE civicrm_email.email $op $value ) )";
+       }
+       $sub[] = ' ( ' . implode(' OR ', $fieldsub) . ' ) ';
+     }

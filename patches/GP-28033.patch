@@ -1,0 +1,31 @@
+diff --git a/CRM/Utils/Mail/Incoming.php b/CRM/Utils/Mail/Incoming.php
+index 1b5b71f1bf..76e60f2ae0 100644
+--- a/CRM/Utils/Mail/Incoming.php
++++ b/CRM/Utils/Mail/Incoming.php
+@@ -255,6 +255,7 @@ class CRM_Utils_Mail_Incoming {
+       'mimeType' => $part->mimeType,
+       'contentID' => $part->contentId,
+       'fullName' => $part->fileName,
++      'displayFileName' => $part->contentDisposition->displayFileName ?? $part->fileName,
+     ];
+     return NULL;
+   }
+@@ -372,8 +373,7 @@ class CRM_Utils_Mail_Incoming {
+       $config = CRM_Core_Config::singleton();
+       for ($i = 0; $i < count($attachments); $i++) {
+         $attachNum = $i + 1;
+-        $fileName = basename($attachments[$i]['fullName']);
+-        $newName = CRM_Utils_File::makeFileName($fileName);
++        $newName = CRM_Utils_File::makeFileName(basename($attachments[$i]['displayFileName']));
+         $location = $config->uploadDir . $newName;
+
+         // move file to the civicrm upload directory
+@@ -382,7 +382,7 @@ class CRM_Utils_Mail_Incoming {
+         $mimeType = "{$attachments[$i]['contentType']}/{$attachments[$i]['mimeType']}";
+
+         $params["attachFile_$attachNum"] = [
+-          'uri' => $fileName,
++          'uri' => $newName,
+           'type' => $mimeType,
+           'upload_date' => $date,
+           'location' => $location,

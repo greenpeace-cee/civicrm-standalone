@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4addc099868efa56ede0885a7ab960a5",
+    "content-hash": "2c02c5e23006cdaaded4f49f895c9e7d",
     "packages": [
         {
             "name": "adrienrn/php-mimetyper",
@@ -398,7 +398,7 @@
             "source": {
                 "type": "git",
                 "url": "https://lab.civicrm.org/extensions/action-provider.git",
-                "reference": "eac48f3c5b9fc8a95e130075ef3d8dd05f2be5d0"
+                "reference": "73a082d7ec393c0186ce433efa52dc3ba26f60ff"
             },
             "require": {
                 "ext-json": "*"
@@ -406,7 +406,7 @@
             "default-branch": true,
             "type": "civicrm-ext",
             "description": "Action Provider",
-            "time": "2025-03-19T08:50:27+00:00"
+            "time": "2025-04-02T11:08:34+00:00"
         },
         {
             "name": "civicrm/advancedlogtables",
@@ -7795,16 +7795,16 @@
         },
         {
             "name": "tecnickcom/tcpdf",
-            "version": "6.9.0",
+            "version": "6.9.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tecnickcom/TCPDF.git",
-                "reference": "f67b761b61f2370a9000d98c3b9111284544f722"
+                "reference": "ed27e28a4c478f7f4015b5e7e7b1912af9e85f2b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tecnickcom/TCPDF/zipball/f67b761b61f2370a9000d98c3b9111284544f722",
-                "reference": "f67b761b61f2370a9000d98c3b9111284544f722",
+                "url": "https://api.github.com/repos/tecnickcom/TCPDF/zipball/ed27e28a4c478f7f4015b5e7e7b1912af9e85f2b",
+                "reference": "ed27e28a4c478f7f4015b5e7e7b1912af9e85f2b",
                 "shasum": ""
             },
             "require": {
@@ -7854,7 +7854,7 @@
             ],
             "support": {
                 "issues": "https://github.com/tecnickcom/TCPDF/issues",
-                "source": "https://github.com/tecnickcom/TCPDF/tree/6.9.0"
+                "source": "https://github.com/tecnickcom/TCPDF/tree/6.9.1"
             },
             "funding": [
                 {
@@ -7862,7 +7862,7 @@
                     "type": "custom"
                 }
             ],
-            "time": "2025-03-30T16:56:09+00:00"
+            "time": "2025-04-03T06:38:07+00:00"
         },
         {
             "name": "totten/ca-config",

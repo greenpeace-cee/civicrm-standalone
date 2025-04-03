@@ -1,0 +1,26 @@
+diff --git a/CRM/Contact/Form/Search/Advanced.php b/CRM/Contact/Form/Search/Advanced.php
+index 7b9d471ef3..edce068f76 100644
+--- a/CRM/Contact/Form/Search/Advanced.php
++++ b/CRM/Contact/Form/Search/Advanced.php
+@@ -242,7 +242,7 @@ class CRM_Contact_Form_Search_Advanced extends CRM_Contact_Form_Search {
+         }
+       }
+
+-      $this->set('uf_group_id', $this->_formValues['uf_group_id'] ?? '');
++      $this->set('uf_group_id', $this->_formValues['uf_group_id'] ?? Civi::settings()->get('defaultSearchProfileID'));
+     }
+
+     // retrieve ssID values only if formValues is null, i.e. form has never been posted
+diff --git a/CRM/Contact/Form/Search/Builder.php b/CRM/Contact/Form/Search/Builder.php
+index 44108ea0d8..39e2d678d0 100644
+--- a/CRM/Contact/Form/Search/Builder.php
++++ b/CRM/Contact/Form/Search/Builder.php
+@@ -363,7 +363,7 @@ class CRM_Contact_Form_Search_Builder extends CRM_Contact_Form_Search {
+     // get it from controller only if form has been submitted, else preProcess has set this
+     if (!empty($_POST)) {
+       $this->_formValues = $this->controller->exportValues($this->_name);
+-      $this->set('uf_group_id', $this->_formValues['uf_group_id'] ?? '');
++      $this->set('uf_group_id', $this->_formValues['uf_group_id'] ?? Civi::settings()->get('defaultSearchProfileID'));
+     }
+
+     // we dont want to store the sortByCharacter in the formValue, it is more like

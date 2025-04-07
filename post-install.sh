@@ -69,6 +69,10 @@ cv upgrade:db
 
 # --- GPAT-specific settings ------------------------------------------------- #
 
+# Default theme
+cv api4 Setting.set +v theme_frontend="danube"
+cv api4 Setting.set +v theme_backend="danube"
+
 # Default currency = EUR
 cv api4 Setting.set +v defaultCurrency="EUR"
 

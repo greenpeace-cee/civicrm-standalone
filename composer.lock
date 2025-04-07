@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2c02c5e23006cdaaded4f49f895c9e7d",
+    "content-hash": "aa32527bede5f1ffe33052ba0a03d056",
     "packages": [
         {
             "name": "adrienrn/php-mimetyper",
@@ -2375,11 +2375,38 @@
             "time": "2025-03-31T10:42:29+00:00"
         },
         {
+            "name": "greenpeace-cee/danube",
+            "version": "dev-composer",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:greenpeace-cee/danube.git",
+                "reference": "2bdd8de866856f64887970ab892dd4bbf26a4449"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/greenpeace-cee/danube/zipball/2bdd8de866856f64887970ab892dd4bbf26a4449",
+                "reference": "2bdd8de866856f64887970ab892dd4bbf26a4449",
+                "shasum": ""
+            },
+            "type": "civicrm-ext",
+            "license": [
+                "AGPL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Patrick Figel",
+                    "email": "pfigel@greenpeace.org"
+                }
+            ],
+            "description": "CiviCRM Danube theme",
+            "time": "2025-04-04T12:08:48+00:00"
+        },
+        {
             "name": "greenpeace-cee/dataro",
             "version": "dev-test-composer",
             "source": {
                 "type": "git",
-                "url": "git@github.com:greenpeace-cee/dataro",
+                "url": "git@github.com:greenpeace-cee/dataro.git",
                 "reference": "a84a487a708714828bf86f77ce7b65385ec82131"
             },
             "dist": {
@@ -8409,6 +8436,7 @@
         "greenpeace-cee/contacteditor": 20,
         "greenpeace-cee/contactinactive": 20,
         "greenpeace-cee/contract": 20,
+        "greenpeace-cee/danube": 20,
         "greenpeace-cee/dataro": 20,
         "greenpeace-cee/doctorwhen": 20,
         "greenpeace-cee/donutapp": 20,

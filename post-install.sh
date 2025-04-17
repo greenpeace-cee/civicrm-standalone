@@ -101,7 +101,8 @@ cv api4 SepaCreditor.create \
     +v mandate_active="1" \
     +v name="Greenpeace" \
     +v sepa_file_format_id="pain_008_001_02_OTHERID" \
-    +v uses_bic="0"
+    +v uses_bic="0" \
+    +v creditor_type=SEPA
 
 cv api4 Setting.set \
     +v batching_default_creditor="2" \

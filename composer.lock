@@ -2978,17 +2978,17 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:greenpeace-cee/at.greenpeace.uimods.git",
-                "reference": "dc3bb2717083b04ba111f0fc5a9bcf808fbb075a"
+                "reference": "6905b5a797acb4a18efe6131a0e9b9db09621198"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/greenpeace-cee/at.greenpeace.uimods/zipball/dc3bb2717083b04ba111f0fc5a9bcf808fbb075a",
-                "reference": "dc3bb2717083b04ba111f0fc5a9bcf808fbb075a",
+                "url": "https://api.github.com/repos/greenpeace-cee/at.greenpeace.uimods/zipball/6905b5a797acb4a18efe6131a0e9b9db09621198",
+                "reference": "6905b5a797acb4a18efe6131a0e9b9db09621198",
                 "shasum": ""
             },
             "default-branch": true,
             "type": "civicrm-ext",
-            "time": "2025-03-18T13:21:28+00:00"
+            "time": "2025-04-17T13:46:58+00:00"
         },
         {
             "name": "greenpeace-cee/webshoptools",

@@ -25,6 +25,7 @@
         "greenpeace-cee/contacteditor": "dev-master",
         "greenpeace-cee/contactinactive": "dev-master",
         "greenpeace-cee/contract": "dev-master",
+        "greenpeace-cee/danube": "dev-composer",
         "greenpeace-cee/dataro": "dev-test-composer",
         "greenpeace-cee/doctorwhen": "dev-master",
         "greenpeace-cee/donutapp": "dev-master",
@@ -171,7 +172,11 @@
         },
         {
             "type": "vcs",
-            "url": "git@github.com:greenpeace-cee/dataro"
+            "url": "git@github.com:greenpeace-cee/danube.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:greenpeace-cee/dataro.git"
         },
         {
             "type": "vcs",

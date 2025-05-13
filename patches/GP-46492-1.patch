@@ -1,0 +1,26 @@
+diff --git a/CRM/Member/Page/Tab.php b/CRM/Member/Page/Tab.php
+index 7ab06f1a95..72e831b578 100644
+--- a/CRM/Member/Page/Tab.php
++++ b/CRM/Member/Page/Tab.php
+@@ -148,7 +148,7 @@ class CRM_Member_Page_Tab extends CRM_Core_Page {
+             'id' => $dao->id,
+             'cid' => $this->_contactId,
+           ],
+-          ts('Renew') . '...',
++          'more',
+           FALSE,
+           'membership.tab.row',
+           'Membership',
+diff --git a/CRM/Member/Selector/Search.php b/CRM/Member/Selector/Search.php
+index 1aff108f0c..51caa595f7 100644
+--- a/CRM/Member/Selector/Search.php
++++ b/CRM/Member/Selector/Search.php
+@@ -404,7 +404,7 @@ class CRM_Member_Selector_Search extends CRM_Core_Selector_Base implements CRM_C
+             'cid' => $result->contact_id,
+             'cxt' => $this->_context,
+           ],
+-          ts('Renew') . '...',
++          'more',
+           FALSE,
+           'membership.selector.row',
+           'Membership',

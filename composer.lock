@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2c02c5e23006cdaaded4f49f895c9e7d",
+    "content-hash": "8e9dee67bbbf8de58173536f5262b8e7",
     "packages": [
         {
             "name": "adrienrn/php-mimetyper",
@@ -398,7 +398,7 @@
             "source": {
                 "type": "git",
                 "url": "https://lab.civicrm.org/extensions/action-provider.git",
-                "reference": "aaea8b6ecf4d741a26762a509fd6407f22fe0b7c"
+                "reference": "c3bb6ad2fb7d5b3ca7b16254a3df8bf5b0202302"
             },
             "require": {
                 "ext-json": "*"
@@ -406,7 +406,7 @@
             "default-branch": true,
             "type": "civicrm-ext",
             "description": "Action Provider",
-            "time": "2025-04-15T12:03:53+00:00"
+            "time": "2025-05-13T09:53:11+00:00"
         },
         {
             "name": "civicrm/advancedlogtables",
@@ -1160,16 +1160,16 @@
         },
         {
             "name": "civicrm/composer-compile-plugin",
-            "version": "v0.20",
+            "version": "v0.21",
             "source": {
                 "type": "git",
                 "url": "https://github.com/civicrm/composer-compile-plugin.git",
-                "reference": "0933ff53cd720ddcb24bdc5984879673ea1e0cbe"
+                "reference": "9129c3588e15e7744be2d740d3aff6b3215dff09"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/civicrm/composer-compile-plugin/zipball/0933ff53cd720ddcb24bdc5984879673ea1e0cbe",
-                "reference": "0933ff53cd720ddcb24bdc5984879673ea1e0cbe",
+                "url": "https://api.github.com/repos/civicrm/composer-compile-plugin/zipball/9129c3588e15e7744be2d740d3aff6b3215dff09",
+                "reference": "9129c3588e15e7744be2d740d3aff6b3215dff09",
                 "shasum": ""
             },
             "require": {
@@ -1203,9 +1203,9 @@
             "description": "Define a 'compile' event for all packages in the dependency-graph",
             "support": {
                 "issues": "https://github.com/civicrm/composer-compile-plugin/issues",
-                "source": "https://github.com/civicrm/composer-compile-plugin/tree/v0.20"
+                "source": "https://github.com/civicrm/composer-compile-plugin/tree/v0.21"
             },
-            "time": "2023-03-01T06:55:29+00:00"
+            "time": "2025-05-05T07:08:54+00:00"
         },
         {
             "name": "civicrm/composer-downloads-plugin",
@@ -1295,12 +1295,12 @@
             "source": {
                 "type": "git",
                 "url": "https://lab.civicrm.org/extensions/form-processor.git",
-                "reference": "86379d0f9ae734f5410c6a336b84a99b82b8af21"
+                "reference": "a122eda50c556481ef92d901ee26bc0f184a8a72"
             },
             "default-branch": true,
             "type": "civicrm-ext",
             "description": "Form Processor",
-            "time": "2025-03-18T10:46:20+00:00"
+            "time": "2025-05-13T09:15:40+00:00"
         },
         {
             "name": "civicrm/gitignore",
@@ -1359,6 +1359,19 @@
             "type": "civicrm-ext",
             "description": "Extension containing shared code used by payment processors and other extensions by MJW",
             "time": "2024-12-11T15:55:43+00:00"
+        },
+        {
+            "name": "civicrm/riverlea",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://lab.civicrm.org/extensions/riverlea.git",
+                "reference": "6ac93b332cfa4f596301b5158f441a165726cb5f"
+            },
+            "default-branch": true,
+            "type": "civicrm-ext",
+            "description": "CiviCRM Theme Framework",
+            "time": "2025-04-16T08:16:26+00:00"
         },
         {
             "name": "civicrm/smsapi",
@@ -2308,17 +2321,35 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:greenpeace-cee/at.greenpeace.casetools.git",
-                "reference": "648bd8dac57ce8a7f5996ce24089a0af1ceda503"
+                "reference": "92818bdb8fc477d7c422d18ba403639e761a4c26"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/greenpeace-cee/at.greenpeace.casetools/zipball/648bd8dac57ce8a7f5996ce24089a0af1ceda503",
-                "reference": "648bd8dac57ce8a7f5996ce24089a0af1ceda503",
+                "url": "https://api.github.com/repos/greenpeace-cee/at.greenpeace.casetools/zipball/92818bdb8fc477d7c422d18ba403639e761a4c26",
+                "reference": "92818bdb8fc477d7c422d18ba403639e761a4c26",
                 "shasum": ""
             },
             "default-branch": true,
             "type": "civicrm-ext",
-            "time": "2024-12-04T16:57:06+00:00"
+            "time": "2025-04-24T09:33:42+00:00"
+        },
+        {
+            "name": "greenpeace-cee/civicall",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:greenpeace-cee/civicall.git",
+                "reference": "97c8985467f3c0eaef5d2f121b37009eefe68b4e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/greenpeace-cee/civicall/zipball/97c8985467f3c0eaef5d2f121b37009eefe68b4e",
+                "reference": "97c8985467f3c0eaef5d2f121b37009eefe68b4e",
+                "shasum": ""
+            },
+            "default-branch": true,
+            "type": "civicrm-ext",
+            "time": "2025-05-13T09:50:30+00:00"
         },
         {
             "name": "greenpeace-cee/contacteditor",
@@ -2575,17 +2606,17 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:greenpeace-cee/at.greenpeace.gpapi.git",
-                "reference": "b40dd0d73228925bd310e10c9c8eb71945b5d4ab"
+                "reference": "e9a73ea5ce5b9ff15e0efa34a84065a4baf1c58b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/greenpeace-cee/at.greenpeace.gpapi/zipball/b40dd0d73228925bd310e10c9c8eb71945b5d4ab",
-                "reference": "b40dd0d73228925bd310e10c9c8eb71945b5d4ab",
+                "url": "https://api.github.com/repos/greenpeace-cee/at.greenpeace.gpapi/zipball/e9a73ea5ce5b9ff15e0efa34a84065a4baf1c58b",
+                "reference": "e9a73ea5ce5b9ff15e0efa34a84065a4baf1c58b",
                 "shasum": ""
             },
             "default-branch": true,
             "type": "civicrm-ext",
-            "time": "2025-02-17T16:08:14+00:00"
+            "time": "2025-04-18T12:26:22+00:00"
         },
         {
             "name": "greenpeace-cee/greenpeace_contribute",
@@ -2754,17 +2785,17 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:greenpeace-cee/de.systopia.postcodeat.git",
-                "reference": "9b30abb6d208dbaecd966909ecffb727af0709f0"
+                "reference": "53fbacaef1274115f64d8125a4e8ebdc320f715b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/greenpeace-cee/de.systopia.postcodeat/zipball/9b30abb6d208dbaecd966909ecffb727af0709f0",
-                "reference": "9b30abb6d208dbaecd966909ecffb727af0709f0",
+                "url": "https://api.github.com/repos/greenpeace-cee/de.systopia.postcodeat/zipball/53fbacaef1274115f64d8125a4e8ebdc320f715b",
+                "reference": "53fbacaef1274115f64d8125a4e8ebdc320f715b",
                 "shasum": ""
             },
             "default-branch": true,
             "type": "civicrm-ext",
-            "time": "2024-12-09T17:26:34+00:00"
+            "time": "2025-04-22T14:01:49+00:00"
         },
         {
             "name": "greenpeace-cee/pspsepa",
@@ -2915,12 +2946,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:greenpeace-cee/be.aivl.streetimport.git",
-                "reference": "b9b3966e6887f4bcdfcf5fa60df5d5575b49934f"
+                "reference": "05241f5d23e222d3859f2dcf9c9a66860b759e45"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/greenpeace-cee/be.aivl.streetimport/zipball/b9b3966e6887f4bcdfcf5fa60df5d5575b49934f",
-                "reference": "b9b3966e6887f4bcdfcf5fa60df5d5575b49934f",
+                "url": "https://api.github.com/repos/greenpeace-cee/be.aivl.streetimport/zipball/05241f5d23e222d3859f2dcf9c9a66860b759e45",
+                "reference": "05241f5d23e222d3859f2dcf9c9a66860b759e45",
                 "shasum": ""
             },
             "default-branch": true,
@@ -2934,7 +2965,7 @@
                     "email": "pfigel@greenpeace.org"
                 }
             ],
-            "time": "2025-02-18T14:37:02+00:00"
+            "time": "2025-04-30T14:20:20+00:00"
         },
         {
             "name": "greenpeace-cee/superset",
@@ -6893,7 +6924,7 @@
         },
         {
             "name": "symfony/polyfill-ctype",
-            "version": "v1.31.0",
+            "version": "v1.32.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-ctype.git",
@@ -6952,7 +6983,7 @@
                 "portable"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-ctype/tree/v1.31.0"
+                "source": "https://github.com/symfony/polyfill-ctype/tree/v1.32.0"
             },
             "funding": [
                 {
@@ -6972,16 +7003,16 @@
         },
         {
             "name": "symfony/polyfill-iconv",
-            "version": "v1.31.0",
+            "version": "v1.32.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-iconv.git",
-                "reference": "48becf00c920479ca2e910c22a5a39e5d47ca956"
+                "reference": "5f3b930437ae03ae5dff61269024d8ea1b3774aa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-iconv/zipball/48becf00c920479ca2e910c22a5a39e5d47ca956",
-                "reference": "48becf00c920479ca2e910c22a5a39e5d47ca956",
+                "url": "https://api.github.com/repos/symfony/polyfill-iconv/zipball/5f3b930437ae03ae5dff61269024d8ea1b3774aa",
+                "reference": "5f3b930437ae03ae5dff61269024d8ea1b3774aa",
                 "shasum": ""
             },
             "require": {
@@ -7032,7 +7063,7 @@
                 "shim"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-iconv/tree/v1.31.0"
+                "source": "https://github.com/symfony/polyfill-iconv/tree/v1.32.0"
             },
             "funding": [
                 {
@@ -7048,23 +7079,24 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-09-09T11:45:10+00:00"
+            "time": "2024-09-17T14:58:18+00:00"
         },
         {
             "name": "symfony/polyfill-mbstring",
-            "version": "v1.31.0",
+            "version": "v1.32.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-mbstring.git",
-                "reference": "85181ba99b2345b0ef10ce42ecac37612d9fd341"
+                "reference": "6d857f4d76bd4b343eac26d6b539585d2bc56493"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/85181ba99b2345b0ef10ce42ecac37612d9fd341",
-                "reference": "85181ba99b2345b0ef10ce42ecac37612d9fd341",
+                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/6d857f4d76bd4b343eac26d6b539585d2bc56493",
+                "reference": "6d857f4d76bd4b343eac26d6b539585d2bc56493",
                 "shasum": ""
             },
             "require": {
+                "ext-iconv": "*",
                 "php": ">=7.2"
             },
             "provide": {
@@ -7112,7 +7144,7 @@
                 "shim"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-mbstring/tree/v1.31.0"
+                "source": "https://github.com/symfony/polyfill-mbstring/tree/v1.32.0"
             },
             "funding": [
                 {
@@ -7128,20 +7160,20 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-09-09T11:45:10+00:00"
+            "time": "2024-12-23T08:48:59+00:00"
         },
         {
             "name": "symfony/polyfill-php80",
-            "version": "v1.31.0",
+            "version": "v1.32.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-php80.git",
-                "reference": "60328e362d4c2c802a54fcbf04f9d3fb892b4cf8"
+                "reference": "0cc9dd0f17f61d8131e7df6b84bd344899fe2608"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-php80/zipball/60328e362d4c2c802a54fcbf04f9d3fb892b4cf8",
-                "reference": "60328e362d4c2c802a54fcbf04f9d3fb892b4cf8",
+                "url": "https://api.github.com/repos/symfony/polyfill-php80/zipball/0cc9dd0f17f61d8131e7df6b84bd344899fe2608",
+                "reference": "0cc9dd0f17f61d8131e7df6b84bd344899fe2608",
                 "shasum": ""
             },
             "require": {
@@ -7192,7 +7224,7 @@
                 "shim"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-php80/tree/v1.31.0"
+                "source": "https://github.com/symfony/polyfill-php80/tree/v1.32.0"
             },
             "funding": [
                 {
@@ -7208,11 +7240,11 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-09-09T11:45:10+00:00"
+            "time": "2025-01-02T08:10:11+00:00"
         },
         {
             "name": "symfony/polyfill-php81",
-            "version": "v1.31.0",
+            "version": "v1.32.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-php81.git",
@@ -7268,7 +7300,7 @@
                 "shim"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-php81/tree/v1.31.0"
+                "source": "https://github.com/symfony/polyfill-php81/tree/v1.32.0"
             },
             "funding": [
                 {
@@ -7288,7 +7320,7 @@
         },
         {
             "name": "symfony/polyfill-php82",
-            "version": "v1.31.0",
+            "version": "v1.32.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-php82.git",
@@ -7344,7 +7376,7 @@
                 "shim"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-php82/tree/v1.31.0"
+                "source": "https://github.com/symfony/polyfill-php82/tree/v1.32.0"
             },
             "funding": [
                 {
@@ -7508,16 +7540,16 @@
         },
         {
             "name": "symfony/var-dumper",
-            "version": "v6.4.18",
+            "version": "v6.4.21",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/var-dumper.git",
-                "reference": "4ad10cf8b020e77ba665305bb7804389884b4837"
+                "reference": "22560f80c0c5cd58cc0bcaf73455ffd81eb380d5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/4ad10cf8b020e77ba665305bb7804389884b4837",
-                "reference": "4ad10cf8b020e77ba665305bb7804389884b4837",
+                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/22560f80c0c5cd58cc0bcaf73455ffd81eb380d5",
+                "reference": "22560f80c0c5cd58cc0bcaf73455ffd81eb380d5",
                 "shasum": ""
             },
             "require": {
@@ -7573,7 +7605,7 @@
                 "dump"
             ],
             "support": {
-                "source": "https://github.com/symfony/var-dumper/tree/v6.4.18"
+                "source": "https://github.com/symfony/var-dumper/tree/v6.4.21"
             },
             "funding": [
                 {
@@ -7589,20 +7621,20 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-01-17T11:26:11+00:00"
+            "time": "2025-04-09T07:34:50+00:00"
         },
         {
             "name": "symfony/var-exporter",
-            "version": "v6.4.20",
+            "version": "v6.4.21",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/var-exporter.git",
-                "reference": "998df255e9e6a15a36ae35e9c6cd818c17cf92a2"
+                "reference": "717e7544aa99752c54ecba5c0e17459c48317472"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/var-exporter/zipball/998df255e9e6a15a36ae35e9c6cd818c17cf92a2",
-                "reference": "998df255e9e6a15a36ae35e9c6cd818c17cf92a2",
+                "url": "https://api.github.com/repos/symfony/var-exporter/zipball/717e7544aa99752c54ecba5c0e17459c48317472",
+                "reference": "717e7544aa99752c54ecba5c0e17459c48317472",
                 "shasum": ""
             },
             "require": {
@@ -7650,7 +7682,7 @@
                 "serialize"
             ],
             "support": {
-                "source": "https://github.com/symfony/var-exporter/tree/v6.4.20"
+                "source": "https://github.com/symfony/var-exporter/tree/v6.4.21"
             },
             "funding": [
                 {
@@ -7666,7 +7698,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-03-13T09:55:08+00:00"
+            "time": "2025-04-27T21:06:26+00:00"
         },
         {
             "name": "systopia/de.systopia.civioffice",
@@ -7795,16 +7827,16 @@
         },
         {
             "name": "tecnickcom/tcpdf",
-            "version": "6.9.1",
+            "version": "6.9.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tecnickcom/TCPDF.git",
-                "reference": "ed27e28a4c478f7f4015b5e7e7b1912af9e85f2b"
+                "reference": "d0e8dd17f8a1df3c97b94b9af8356e88e811ed59"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tecnickcom/TCPDF/zipball/ed27e28a4c478f7f4015b5e7e7b1912af9e85f2b",
-                "reference": "ed27e28a4c478f7f4015b5e7e7b1912af9e85f2b",
+                "url": "https://api.github.com/repos/tecnickcom/TCPDF/zipball/d0e8dd17f8a1df3c97b94b9af8356e88e811ed59",
+                "reference": "d0e8dd17f8a1df3c97b94b9af8356e88e811ed59",
                 "shasum": ""
             },
             "require": {
@@ -7854,7 +7886,7 @@
             ],
             "support": {
                 "issues": "https://github.com/tecnickcom/TCPDF/issues",
-                "source": "https://github.com/tecnickcom/TCPDF/tree/6.9.1"
+                "source": "https://github.com/tecnickcom/TCPDF/tree/6.9.3"
             },
             "funding": [
                 {
@@ -7862,7 +7894,7 @@
                     "type": "custom"
                 }
             ],
-            "time": "2025-04-03T06:38:07+00:00"
+            "time": "2025-04-20T15:52:50+00:00"
         },
         {
             "name": "totten/ca-config",
@@ -8133,16 +8165,16 @@
         },
         {
             "name": "websms-com/websmscom-php",
-            "version": "v1.0.9",
+            "version": "v1.0.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/websms-com/websmscom-php.git",
-                "reference": "32d8a945ff0a8b4c5ca5beaf8bdc1e33f86652f1"
+                "reference": "476909723a82af412f19912cf5fe68d8412bd3c3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/websms-com/websmscom-php/zipball/32d8a945ff0a8b4c5ca5beaf8bdc1e33f86652f1",
-                "reference": "32d8a945ff0a8b4c5ca5beaf8bdc1e33f86652f1",
+                "url": "https://api.github.com/repos/websms-com/websmscom-php/zipball/476909723a82af412f19912cf5fe68d8412bd3c3",
+                "reference": "476909723a82af412f19912cf5fe68d8412bd3c3",
                 "shasum": ""
             },
             "require": {
@@ -8167,9 +8199,9 @@
             "description": "A lightweight PHP-client-library for using websms.com SMS services.",
             "support": {
                 "issues": "https://github.com/websms-com/websmscom-php/issues",
-                "source": "https://github.com/websms-com/websmscom-php/tree/v1.0.9"
+                "source": "https://github.com/websms-com/websmscom-php/tree/v1.0.10"
             },
-            "time": "2025-02-11T09:36:27+00:00"
+            "time": "2025-05-05T16:32:17+00:00"
         },
         {
             "name": "xkerman/restricted-unserialize",
@@ -8397,6 +8429,7 @@
         "civicrm/extendedreport": 20,
         "civicrm/form-processor": 20,
         "civicrm/mjwshared": 20,
+        "civicrm/riverlea": 20,
         "civicrm/smsapi": 20,
         "civicrm/sqltasks": 20,
         "greenpeace-cee/adyen": 20,
@@ -8406,6 +8439,7 @@
         "greenpeace-cee/bpk": 20,
         "greenpeace-cee/campaign": 20,
         "greenpeace-cee/casetools": 20,
+        "greenpeace-cee/civicall": 20,
         "greenpeace-cee/contacteditor": 20,
         "greenpeace-cee/contactinactive": 20,
         "greenpeace-cee/contract": 20,

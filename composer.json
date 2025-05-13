@@ -13,6 +13,7 @@
         "civicrm/extendedreport": "dev-master",
         "civicrm/form-processor": "dev-main",
         "civicrm/mjwshared": "dev-master",
+        "civicrm/riverlea": "dev-main",
         "civicrm/smsapi": "dev-main",
         "civicrm/sqltasks": "dev-master",
         "greenpeace-cee/adyen": "dev-main",
@@ -22,6 +23,7 @@
         "greenpeace-cee/bpk": "dev-master",
         "greenpeace-cee/campaign": "dev-master",
         "greenpeace-cee/casetools": "dev-master",
+        "greenpeace-cee/civicall": "dev-main",
         "greenpeace-cee/contacteditor": "dev-master",
         "greenpeace-cee/contactinactive": "dev-master",
         "greenpeace-cee/contract": "dev-master",
@@ -187,6 +189,10 @@
         },
         {
             "type": "vcs",
+            "url": "git@github.com:greenpeace-cee/civicall.git"
+        },
+        {
+            "type": "vcs",
             "url": "git@github.com:greenpeace-cee/de.systopia.contactinactive.git"
         },
         {
@@ -348,6 +354,10 @@
         {
             "type": "vcs",
             "url": "https://lab.civicrm.org/extensions/form-processor.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://lab.civicrm.org/extensions/riverlea.git"
         }
     ]
 }

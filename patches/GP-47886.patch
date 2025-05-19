@@ -1,0 +1,13 @@
+diff --git a/CRM/Contribute/BAO/Contribution.php b/CRM/Contribute/BAO/Contribution.php
+index b981158b3a..d3cc55f216 100644
+--- a/CRM/Contribute/BAO/Contribution.php
++++ b/CRM/Contribute/BAO/Contribution.php
+@@ -2247,8 +2247,6 @@ LEFT JOIN  civicrm_contribution contribution ON ( componentPayment.contribution_
+     $contributionParams['source'] = $contributionParams['source'] ?? ts('Recurring contribution');
+ 
+     $createContribution = civicrm_api3('Contribution', 'create', $contributionParams);
+-    $temporaryObject = new CRM_Contribute_BAO_Contribution();
+-    $temporaryObject->copyCustomFields($templateContribution['id'], $createContribution['id']);
+     // Add new soft credit against current $contribution.
+     CRM_Contribute_BAO_ContributionRecur::addrecurSoftCredit($contributionParams['contribution_recur_id'], $createContribution['id']);
+     CRM_Contribute_BAO_ContributionRecur::updateRecurLinkedPledge($createContribution['id'], $contributionParams['contribution_recur_id'],

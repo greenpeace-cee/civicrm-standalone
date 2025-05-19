@@ -99,7 +99,8 @@
                 "Add index hint on case role query": "patches/GP-44653-2.patch",
                 "Add index hint on case activity join": "patches/GP-44653-3.patch",
                 "Improve generated table and column names for custom groups": "patches/GP-46928.patch",
-                "Fix action links on membership tab using 'Renew...' as label for 'more'": "patches/GP-46492-1.patch"
+                "Fix action links on membership tab using 'Renew...' as label for 'more'": "patches/GP-46492-1.patch",
+                "Remove copying of custom fields in Contribution.repeattransaction": "patches/GP-47886.patch"
             }
         },
         "civicrm-asset": {

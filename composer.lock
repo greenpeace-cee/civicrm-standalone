@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8e9dee67bbbf8de58173536f5262b8e7",
+    "content-hash": "ef298c702d88e6d9dd764a90ab0134ba",
     "packages": [
         {
             "name": "adrienrn/php-mimetyper",
@@ -398,7 +398,7 @@
             "source": {
                 "type": "git",
                 "url": "https://lab.civicrm.org/extensions/action-provider.git",
-                "reference": "c3bb6ad2fb7d5b3ca7b16254a3df8bf5b0202302"
+                "reference": "2fbac77a8e2fb2dc23c1a80c5aeac3cf75708f07"
             },
             "require": {
                 "ext-json": "*"
@@ -406,7 +406,7 @@
             "default-branch": true,
             "type": "civicrm-ext",
             "description": "Action Provider",
-            "time": "2025-05-13T09:53:11+00:00"
+            "time": "2025-05-14T12:32:20+00:00"
         },
         {
             "name": "civicrm/advancedlogtables",
@@ -1361,6 +1361,25 @@
             "time": "2024-12-11T15:55:43+00:00"
         },
         {
+            "name": "civicrm/recentmenu",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:greenpeace-cee/org.civicrm.recentmenu.git",
+                "reference": "e576540a320c0520b62d3ed3b964e737bfd2ee72"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/greenpeace-cee/org.civicrm.recentmenu/zipball/e576540a320c0520b62d3ed3b964e737bfd2ee72",
+                "reference": "e576540a320c0520b62d3ed3b964e737bfd2ee72",
+                "shasum": ""
+            },
+            "default-branch": true,
+            "type": "civicrm-ext",
+            "description": "Places recently-viewed items in the Menu bar for quick access",
+            "time": "2025-04-28T10:20:41+00:00"
+        },
+        {
             "name": "civicrm/riverlea",
             "version": "dev-main",
             "source": {
@@ -2303,17 +2322,17 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:greenpeace-cee/de.systopia.campaign.git",
-                "reference": "29d9751c5d59b3d9ad467629137a375ca38d1b44"
+                "reference": "ed37089f6e1b8e658c69596eb514ef54891e9a19"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/greenpeace-cee/de.systopia.campaign/zipball/29d9751c5d59b3d9ad467629137a375ca38d1b44",
-                "reference": "29d9751c5d59b3d9ad467629137a375ca38d1b44",
+                "url": "https://api.github.com/repos/greenpeace-cee/de.systopia.campaign/zipball/ed37089f6e1b8e658c69596eb514ef54891e9a19",
+                "reference": "ed37089f6e1b8e658c69596eb514ef54891e9a19",
                 "shasum": ""
             },
             "default-branch": true,
             "type": "civicrm-ext",
-            "time": "2024-12-11T12:44:54+00:00"
+            "time": "2025-05-13T10:08:58+00:00"
         },
         {
             "name": "greenpeace-cee/casetools",
@@ -2393,17 +2412,17 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:greenpeace-cee/de.systopia.contract.git",
-                "reference": "c7536d7a6db75a577dcf92cf2b1d34058563e3bb"
+                "reference": "776c2cc9463ff31168806d204c01a94ac19a2ef7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/greenpeace-cee/de.systopia.contract/zipball/c7536d7a6db75a577dcf92cf2b1d34058563e3bb",
-                "reference": "c7536d7a6db75a577dcf92cf2b1d34058563e3bb",
+                "url": "https://api.github.com/repos/greenpeace-cee/de.systopia.contract/zipball/776c2cc9463ff31168806d204c01a94ac19a2ef7",
+                "reference": "776c2cc9463ff31168806d204c01a94ac19a2ef7",
                 "shasum": ""
             },
             "default-branch": true,
             "type": "civicrm-ext",
-            "time": "2025-04-10T20:21:16+00:00"
+            "time": "2025-05-21T12:59:06+00:00"
         },
         {
             "name": "greenpeace-cee/dataro",
@@ -2832,24 +2851,6 @@
             "default-branch": true,
             "type": "civicrm-ext",
             "time": "2024-12-09T17:29:53+00:00"
-        },
-        {
-            "name": "greenpeace-cee/recentmenu",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "git@github.com:greenpeace-cee/org.civicrm.recentmenu.git",
-                "reference": "49f8d8aea6041974c9d4ebff1e3c101f994f86a5"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/greenpeace-cee/org.civicrm.recentmenu/zipball/49f8d8aea6041974c9d4ebff1e3c101f994f86a5",
-                "reference": "49f8d8aea6041974c9d4ebff1e3c101f994f86a5",
-                "shasum": ""
-            },
-            "default-branch": true,
-            "type": "civicrm-ext",
-            "time": "2024-12-18T17:11:12+00:00"
         },
         {
             "name": "greenpeace-cee/searchactiondesigner",
@@ -7827,16 +7828,16 @@
         },
         {
             "name": "tecnickcom/tcpdf",
-            "version": "6.9.3",
+            "version": "6.9.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tecnickcom/TCPDF.git",
-                "reference": "d0e8dd17f8a1df3c97b94b9af8356e88e811ed59"
+                "reference": "c838d7f7babb0d35763acfb9ecf78c3f45966f83"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tecnickcom/TCPDF/zipball/d0e8dd17f8a1df3c97b94b9af8356e88e811ed59",
-                "reference": "d0e8dd17f8a1df3c97b94b9af8356e88e811ed59",
+                "url": "https://api.github.com/repos/tecnickcom/TCPDF/zipball/c838d7f7babb0d35763acfb9ecf78c3f45966f83",
+                "reference": "c838d7f7babb0d35763acfb9ecf78c3f45966f83",
                 "shasum": ""
             },
             "require": {
@@ -7886,15 +7887,15 @@
             ],
             "support": {
                 "issues": "https://github.com/tecnickcom/TCPDF/issues",
-                "source": "https://github.com/tecnickcom/TCPDF/tree/6.9.3"
+                "source": "https://github.com/tecnickcom/TCPDF/tree/6.9.4"
             },
             "funding": [
                 {
-                    "url": "https://www.paypal.com/cgi-bin/webscr?cmd=_donations&currency_code=GBP&business=paypal@tecnick.com&item_name=donation%20for%20tcpdf%20project",
+                    "url": "https://www.paypal.com/donate/?hosted_button_id=NZUEC5XS8MFBJ",
                     "type": "custom"
                 }
             ],
-            "time": "2025-04-20T15:52:50+00:00"
+            "time": "2025-05-13T11:34:35+00:00"
         },
         {
             "name": "totten/ca-config",
@@ -8429,6 +8430,7 @@
         "civicrm/extendedreport": 20,
         "civicrm/form-processor": 20,
         "civicrm/mjwshared": 20,
+        "civicrm/recentmenu": 20,
         "civicrm/riverlea": 20,
         "civicrm/smsapi": 20,
         "civicrm/sqltasks": 20,
@@ -8465,7 +8467,6 @@
         "greenpeace-cee/postcodeat": 20,
         "greenpeace-cee/pspsepa": 20,
         "greenpeace-cee/rcont": 20,
-        "greenpeace-cee/recentmenu": 20,
         "greenpeace-cee/searchactiondesigner": 20,
         "greenpeace-cee/segmentation": 20,
         "greenpeace-cee/sepa": 20,

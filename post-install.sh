@@ -51,7 +51,6 @@ cv api4 Setting.set '{"values":{"enable_components":["CiviCampaign","CiviCase","
 # Enable Civi core extensions
 cv ext:enable \
     "legacycustomsearches" \
-    "oauth-client" \
     "org.civicrm.afform_admin" \
     "org.civicrm.afform-html" \
 
@@ -66,6 +65,7 @@ done
 
 # Perform necessary database upgrades
 cv upgrade:db
+composer civicrm:publish
 
 # --- GPAT-specific settings ------------------------------------------------- #
 

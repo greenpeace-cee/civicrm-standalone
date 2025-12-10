@@ -51,7 +51,6 @@ cv api4 Setting.set '{"values":{"enable_components":["CiviCampaign","CiviCase","
 # Enable Civi core extensions
 cv ext:enable \
     "legacycustomsearches" \
-    "oauth-client" \
     "org.civicrm.afform_admin" \
     "org.civicrm.afform-html" \
 
@@ -65,7 +64,8 @@ for line in $(cv ext:list --columns=key,path --local --out=csv); do
 done
 
 # Perform necessary database upgrades
-cv upgrade:db
+cv ext:upgrade-db
+composer civicrm:publish
 
 # --- GPAT-specific settings ------------------------------------------------- #
 

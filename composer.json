@@ -63,7 +63,7 @@
         "greenpeace-cee/xcm": "dev-master",
         "greenpeace-cee/xcmtools": "dev-master",
         "greenpeace-cee/xdedupe": "dev-master",
-        "phpseclib/phpseclib": "2.0.0 as 3.0.36",
+        "phpseclib/phpseclib": "2.0.47 as 3.0.36",
         "systopia/de.systopia.civioffice": "dev-master",
         "systopia/de.systopia.eck": "dev-master"
     },

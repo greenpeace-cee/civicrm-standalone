@@ -1,0 +1,12 @@
+diff --git a/CRM/Core/BAO/CustomQuery.php b/CRM/Core/BAO/CustomQuery.php
+index c448d3ce2b..64551d9297 100644
+--- a/CRM/Core/BAO/CustomQuery.php
++++ b/CRM/Core/BAO/CustomQuery.php
+@@ -214,6 +214,7 @@ class CRM_Core_BAO_CustomQuery {
+           case 'StateProvince':
+           case 'Country':
+           case 'ContactReference':
++          case 'EntityReference':
+ 
+             if ($field['is_search_range'] && is_array($value)) {
+               //didn't found any field under any of these three data-types as searchable by range

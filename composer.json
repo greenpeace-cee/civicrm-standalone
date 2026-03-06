@@ -49,6 +49,7 @@
         "greenpeace-cee/postcodeat": "dev-master",
         "greenpeace-cee/pspsepa": "dev-master",
         "greenpeace-cee/rcont": "dev-master",
+        "greenpeace-cee/scoretracker": "dev-main",
         "greenpeace-cee/searchactiondesigner": "dev-master",
         "greenpeace-cee/segmentation": "dev-master",
         "greenpeace-cee/sepa": "dev-upstream",
@@ -319,6 +320,10 @@
         {
             "type": "vcs",
             "url": "git@github.com:greenpeace-cee/org.wikimedia.contacteditor.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:greenpeace-cee/scoretracker.git"
         },
         {
             "type": "vcs",

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1e1d48c8ded03eb7a34e2604849b0b95",
+    "content-hash": "db038bc5ed7fb16e497d57b90d5d18b8",
     "packages": [
         {
             "name": "adrienrn/php-mimetyper",
@@ -2777,6 +2777,24 @@
             "default-branch": true,
             "type": "civicrm-ext",
             "time": "2024-12-09T17:29:53+00:00"
+        },
+        {
+            "name": "greenpeace-cee/scoretracker",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:greenpeace-cee/scoretracker.git",
+                "reference": "fb0e4f1354851a0920db0b1d0c3dd49e981d279b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/greenpeace-cee/scoretracker/zipball/fb0e4f1354851a0920db0b1d0c3dd49e981d279b",
+                "reference": "fb0e4f1354851a0920db0b1d0c3dd49e981d279b",
+                "shasum": ""
+            },
+            "default-branch": true,
+            "type": "civicrm-ext",
+            "time": "2026-03-06T13:04:09+00:00"
         },
         {
             "name": "greenpeace-cee/searchactiondesigner",
@@ -8686,6 +8704,7 @@
         "greenpeace-cee/postcodeat": 20,
         "greenpeace-cee/pspsepa": 20,
         "greenpeace-cee/rcont": 20,
+        "greenpeace-cee/scoretracker": 20,
         "greenpeace-cee/searchactiondesigner": 20,
         "greenpeace-cee/segmentation": 20,
         "greenpeace-cee/sepa": 20,

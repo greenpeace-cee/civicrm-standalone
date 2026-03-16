@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "db038bc5ed7fb16e497d57b90d5d18b8",
+    "content-hash": "6e66f9515d9b5412c608f1972e5958d0",
     "packages": [
         {
             "name": "adrienrn/php-mimetyper",
@@ -442,18 +442,23 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:greenpeace-cee/org.project60.banking.git",
-                "reference": "0dd005cc45e6578c2a62880a77da52805d17fefd"
+                "reference": "9ed5b304c3aaa9b72464b50af216be7f6ecb7d16"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/greenpeace-cee/org.project60.banking/zipball/0dd005cc45e6578c2a62880a77da52805d17fefd",
-                "reference": "0dd005cc45e6578c2a62880a77da52805d17fefd",
+                "url": "https://api.github.com/repos/greenpeace-cee/org.project60.banking/zipball/9ed5b304c3aaa9b72464b50af216be7f6ecb7d16",
+                "reference": "9ed5b304c3aaa9b72464b50af216be7f6ecb7d16",
                 "shasum": ""
             },
             "default-branch": true,
             "type": "civicrm-ext",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.3.x-dev"
+                }
+            },
             "license": [
-                "GNU AGPL v3 or later"
+                "AGPL-3.0-or-later"
             ],
             "authors": [
                 {
@@ -462,7 +467,7 @@
                 }
             ],
             "description": "Automatic and semi-automatic processing of bank statements and other payment files.",
-            "time": "2025-12-09T11:47:32+00:00"
+            "time": "2025-12-09T11:42:18+00:00"
         },
         {
             "name": "civicrm/civicrm-asset-plugin",
@@ -1359,12 +1364,12 @@
             "source": {
                 "type": "git",
                 "url": "https://lab.civicrm.org/extensions/riverlea.git",
-                "reference": "f6827464bcf4e395e3c2ad0d0164f0eff4d642aa"
+                "reference": "83db62f9a08b73e6e84f591b931eb4e7fd2a244a"
             },
             "default-branch": true,
             "type": "civicrm-ext",
             "description": "CiviCRM Theme Framework",
-            "time": "2026-03-05T11:10:59+00:00"
+            "time": "2026-03-17T11:29:21+00:00"
         },
         {
             "name": "civicrm/smsapi",
@@ -1400,12 +1405,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:greenpeace-cee/de.systopia.sqltasks.git",
-                "reference": "b2c5d8725ec2f4a4e339a4efb16bfd4fc758db85"
+                "reference": "80df111f30d58a9b5b9a3033ed18f7839e128ed9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/greenpeace-cee/de.systopia.sqltasks/zipball/b2c5d8725ec2f4a4e339a4efb16bfd4fc758db85",
-                "reference": "b2c5d8725ec2f4a4e339a4efb16bfd4fc758db85",
+                "url": "https://api.github.com/repos/greenpeace-cee/de.systopia.sqltasks/zipball/80df111f30d58a9b5b9a3033ed18f7839e128ed9",
+                "reference": "80df111f30d58a9b5b9a3033ed18f7839e128ed9",
                 "shasum": ""
             },
             "default-branch": true,
@@ -1420,7 +1425,7 @@
                 }
             ],
             "description": "Manage recurring tasks based on SQL queries",
-            "time": "2025-09-24T10:11:03+00:00"
+            "time": "2026-03-13T09:58:33+00:00"
         },
         {
             "name": "composer/installers",
@@ -2368,17 +2373,17 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:greenpeace-cee/de.systopia.contract.git",
-                "reference": "3aba6d07431846aad4b86ec235ace59f98eb56e1"
+                "reference": "52df0d20846c40f88e1157f5e88555f58d9645be"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/greenpeace-cee/de.systopia.contract/zipball/3aba6d07431846aad4b86ec235ace59f98eb56e1",
-                "reference": "3aba6d07431846aad4b86ec235ace59f98eb56e1",
+                "url": "https://api.github.com/repos/greenpeace-cee/de.systopia.contract/zipball/52df0d20846c40f88e1157f5e88555f58d9645be",
+                "reference": "52df0d20846c40f88e1157f5e88555f58d9645be",
                 "shasum": ""
             },
             "default-branch": true,
             "type": "civicrm-ext",
-            "time": "2026-03-11T14:16:19+00:00"
+            "time": "2026-03-16T13:46:51+00:00"
         },
         {
             "name": "greenpeace-cee/dataro",
@@ -4322,7 +4327,6 @@
                 "issues": "http://pear.php.net/bugs/search.php?cmd=display&package_name[]=Console_Getopt",
                 "source": "https://github.com/pear/Console_Getopt"
             },
-            "abandoned": true,
             "time": "2019-11-20T18:27:48+00:00"
         },
         {

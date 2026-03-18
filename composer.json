@@ -39,6 +39,7 @@
         "greenpeace-cee/formfieldlibrary": "dev-main",
         "greenpeace-cee/gpapi": "dev-master",
         "greenpeace-cee/greenpeace_contribute": "dev-main",
+        "greenpeace-cee/google_drive": "dev-main",
         "greenpeace-cee/hlrlookup": "dev-master",
         "greenpeace-cee/iap_auth": "dev-main",
         "greenpeace-cee/identitytracker": "dev-master",

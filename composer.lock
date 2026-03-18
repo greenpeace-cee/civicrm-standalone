@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6981e4be4bc30e8980fcbc4f71c50a6d",
+    "content-hash": "dc58b869031f5cd0978d858a014f5606",
     "packages": [
         {
             "name": "adrienrn/php-mimetyper",
@@ -2106,6 +2106,119 @@
             "time": "2025-04-09T20:32:01+00:00"
         },
         {
+            "name": "google/apiclient",
+            "version": "v2.19.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/googleapis/google-api-php-client.git",
+                "reference": "b18fa8aed7b2b2dd4bcce74e2c7d267e16007ea9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/googleapis/google-api-php-client/zipball/b18fa8aed7b2b2dd4bcce74e2c7d267e16007ea9",
+                "reference": "b18fa8aed7b2b2dd4bcce74e2c7d267e16007ea9",
+                "shasum": ""
+            },
+            "require": {
+                "firebase/php-jwt": "^6.0||^7.0",
+                "google/apiclient-services": "~0.350",
+                "google/auth": "^1.37",
+                "guzzlehttp/guzzle": "^7.4.5",
+                "guzzlehttp/psr7": "^2.6",
+                "monolog/monolog": "^2.9||^3.0",
+                "php": "^8.1",
+                "phpseclib/phpseclib": "^3.0.36"
+            },
+            "require-dev": {
+                "cache/filesystem-adapter": "^1.1",
+                "composer/composer": "^1.10.23",
+                "phpcompatibility/php-compatibility": "^9.2",
+                "phpspec/prophecy-phpunit": "^2.1",
+                "phpunit/phpunit": "^9.6",
+                "squizlabs/php_codesniffer": "^3.8",
+                "symfony/css-selector": "~2.1",
+                "symfony/dom-crawler": "~2.1"
+            },
+            "suggest": {
+                "cache/filesystem-adapter": "For caching certs and tokens (using Google\\Client::setCache)"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "2.x-dev"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/aliases.php"
+                ],
+                "psr-4": {
+                    "Google\\": "src/"
+                },
+                "classmap": [
+                    "src/aliases.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "description": "Client library for Google APIs",
+            "homepage": "http://developers.google.com/api-client-library/php",
+            "keywords": [
+                "google"
+            ],
+            "support": {
+                "issues": "https://github.com/googleapis/google-api-php-client/issues",
+                "source": "https://github.com/googleapis/google-api-php-client/tree/v2.19.0"
+            },
+            "time": "2026-01-09T19:59:47+00:00"
+        },
+        {
+            "name": "google/apiclient-services",
+            "version": "v0.435.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/googleapis/google-api-php-client-services.git",
+                "reference": "1edf0f5f2876945c372366107b4d7a387b17a6b9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/googleapis/google-api-php-client-services/zipball/1edf0f5f2876945c372366107b4d7a387b17a6b9",
+                "reference": "1edf0f5f2876945c372366107b4d7a387b17a6b9",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.1"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9.6"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "autoload.php"
+                ],
+                "psr-4": {
+                    "Google\\Service\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "description": "Client library for Google APIs",
+            "homepage": "http://developers.google.com/api-client-library/php",
+            "keywords": [
+                "google"
+            ],
+            "support": {
+                "issues": "https://github.com/googleapis/google-api-php-client-services/issues",
+                "source": "https://github.com/googleapis/google-api-php-client-services/tree/v0.435.0"
+            },
+            "time": "2026-03-01T01:14:26+00:00"
+        },
+        {
             "name": "google/auth",
             "version": "v1.50.0",
             "source": {
@@ -2560,6 +2673,36 @@
             "default-branch": true,
             "type": "civicrm-ext",
             "time": "2025-02-11T15:46:13+00:00"
+        },
+        {
+            "name": "greenpeace-cee/google_drive",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:greenpeace-cee/google_drive.git",
+                "reference": "f4cf6bf83012d52967ac061e05e532e91f30a0ea"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/greenpeace-cee/google_drive/zipball/f4cf6bf83012d52967ac061e05e532e91f30a0ea",
+                "reference": "f4cf6bf83012d52967ac061e05e532e91f30a0ea",
+                "shasum": ""
+            },
+            "require": {
+                "google/apiclient": "^2.15.0"
+            },
+            "default-branch": true,
+            "type": "civicrm-ext",
+            "license": [
+                "AGPL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Patrick Figel",
+                    "email": "pfigel@greenpeace.org"
+                }
+            ],
+            "time": "2025-03-31T13:26:09+00:00"
         },
         {
             "name": "greenpeace-cee/gpapi",
@@ -8886,6 +9029,7 @@
         "greenpeace-cee/exportpermission": 20,
         "greenpeace-cee/fastactivity": 20,
         "greenpeace-cee/formfieldlibrary": 20,
+        "greenpeace-cee/google_drive": 20,
         "greenpeace-cee/gpapi": 20,
         "greenpeace-cee/greenpeace_contribute": 20,
         "greenpeace-cee/hlrlookup": 20,

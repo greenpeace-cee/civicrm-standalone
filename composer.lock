@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "dc58b869031f5cd0978d858a014f5606",
+    "content-hash": "56ba6d09e4d67c0809e15918854fdfce",
     "packages": [
         {
             "name": "adrienrn/php-mimetyper",
@@ -514,19 +514,19 @@
             "version": "dev-6.10-gp",
             "source": {
                 "type": "git",
-                "url": "git@github.com:greenpeace-cee/civicrm-core.git",
-                "reference": "9a92959b7e39803160950f18c9c5d7201597609a"
+                "url": "git@github.com:greenpeace-cee/civicrm-core-private.git",
+                "reference": "552c7cf3bb0f01409d5522cc4e27205b9be8301f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/greenpeace-cee/civicrm-core/zipball/9a92959b7e39803160950f18c9c5d7201597609a",
-                "reference": "9a92959b7e39803160950f18c9c5d7201597609a",
+                "url": "https://api.github.com/repos/greenpeace-cee/civicrm-core-private/zipball/552c7cf3bb0f01409d5522cc4e27205b9be8301f",
+                "reference": "552c7cf3bb0f01409d5522cc4e27205b9be8301f",
                 "shasum": ""
             },
             "require": {
                 "adrienrn/php-mimetyper": "0.2.2",
                 "behat/mink": "^1.10",
-                "brick/money": "~0.5",
+                "brick/money": ">=0.7 <0.11",
                 "civicrm/composer-compile-lib": "~0.6 || ~1.0",
                 "civicrm/composer-downloads-plugin": "^3.0 || ^4.0",
                 "composer-runtime-api": "~2.0",
@@ -1037,29 +1037,25 @@
                 }
             ],
             "description": "Open source constituent relationship management for non-profits, NGOs and advocacy organizations.",
-            "time": "2026-03-17T13:40:29+00:00"
+            "time": "2026-03-20T13:15:19+00:00"
         },
         {
             "name": "civicrm/civicrm-packages",
-            "version": "6.10.x-dev",
+            "version": "dev-6.10-gp",
             "source": {
                 "type": "git",
-                "url": "https://github.com/civicrm/civicrm-packages.git",
-                "reference": "ec2f8de57ddc5294f40fe6d3b56aa176174021e2"
+                "url": "git@github.com:greenpeace-cee/civicrm-packages-private.git",
+                "reference": "2837e074cade264b9a87f126b5e319503cbecd0f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/civicrm/civicrm-packages/zipball/ec2f8de57ddc5294f40fe6d3b56aa176174021e2",
-                "reference": "ec2f8de57ddc5294f40fe6d3b56aa176174021e2",
+                "url": "https://api.github.com/repos/greenpeace-cee/civicrm-packages-private/zipball/2837e074cade264b9a87f126b5e319503cbecd0f",
+                "reference": "2837e074cade264b9a87f126b5e319503cbecd0f",
                 "shasum": ""
             },
             "type": "library",
-            "notification-url": "https://packagist.org/downloads/",
             "description": "Legacy third party dependencies for CiviCRM",
-            "support": {
-                "source": "https://github.com/civicrm/civicrm-packages/tree/6.9.0"
-            },
-            "time": "2025-05-30T06:28:12+00:00"
+            "time": "2026-03-10T22:05:16+00:00"
         },
         {
             "name": "civicrm/civirules",
@@ -2220,16 +2216,16 @@
         },
         {
             "name": "google/auth",
-            "version": "v1.50.0",
+            "version": "v1.50.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/googleapis/google-auth-library-php.git",
-                "reference": "e1c26a718198e16d8a3c69b1cae136b73f959b0f"
+                "reference": "870c17ee3a1d73338d39a9ffa77a700ba77f5a83"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/googleapis/google-auth-library-php/zipball/e1c26a718198e16d8a3c69b1cae136b73f959b0f",
-                "reference": "e1c26a718198e16d8a3c69b1cae136b73f959b0f",
+                "url": "https://api.github.com/repos/googleapis/google-auth-library-php/zipball/870c17ee3a1d73338d39a9ffa77a700ba77f5a83",
+                "reference": "870c17ee3a1d73338d39a9ffa77a700ba77f5a83",
                 "shasum": ""
             },
             "require": {
@@ -2239,7 +2235,7 @@
                 "php": "^8.1",
                 "psr/cache": "^2.0||^3.0",
                 "psr/http-message": "^1.1||^2.0",
-                "psr/log": "^3.0"
+                "psr/log": "^2.0||^3.0"
             },
             "require-dev": {
                 "guzzlehttp/promises": "^2.0",
@@ -2276,9 +2272,9 @@
             "support": {
                 "docs": "https://cloud.google.com/php/docs/reference/auth/latest",
                 "issues": "https://github.com/googleapis/google-auth-library-php/issues",
-                "source": "https://github.com/googleapis/google-auth-library-php/tree/v1.50.0"
+                "source": "https://github.com/googleapis/google-auth-library-php/tree/v1.50.1"
             },
-            "time": "2026-01-08T21:33:57+00:00"
+            "time": "2026-03-18T20:03:29+00:00"
         },
         {
             "name": "greenpeace-cee/adyen",
@@ -2680,12 +2676,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:greenpeace-cee/google_drive.git",
-                "reference": "f4cf6bf83012d52967ac061e05e532e91f30a0ea"
+                "reference": "738bc8543dae20439152c9047763e5b1dce7a845"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/greenpeace-cee/google_drive/zipball/f4cf6bf83012d52967ac061e05e532e91f30a0ea",
-                "reference": "f4cf6bf83012d52967ac061e05e532e91f30a0ea",
+                "url": "https://api.github.com/repos/greenpeace-cee/google_drive/zipball/738bc8543dae20439152c9047763e5b1dce7a845",
+                "reference": "738bc8543dae20439152c9047763e5b1dce7a845",
                 "shasum": ""
             },
             "require": {
@@ -2702,7 +2698,7 @@
                     "email": "pfigel@greenpeace.org"
                 }
             ],
-            "time": "2025-03-31T13:26:09+00:00"
+            "time": "2026-03-20T13:55:34+00:00"
         },
         {
             "name": "greenpeace-cee/gpapi",
@@ -2764,17 +2760,17 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:greenpeace-cee/iap_auth.git",
-                "reference": "4ca0c3b46003769f2af30cc75d3dc59607c00511"
+                "reference": "f50bc65dfc9e1ebaf06bd101f29e5a5a7e6a6dd6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/greenpeace-cee/iap_auth/zipball/4ca0c3b46003769f2af30cc75d3dc59607c00511",
-                "reference": "4ca0c3b46003769f2af30cc75d3dc59607c00511",
+                "url": "https://api.github.com/repos/greenpeace-cee/iap_auth/zipball/f50bc65dfc9e1ebaf06bd101f29e5a5a7e6a6dd6",
+                "reference": "f50bc65dfc9e1ebaf06bd101f29e5a5a7e6a6dd6",
                 "shasum": ""
             },
             "require": {
                 "google/auth": "^1.46",
-                "kelvinmo/simplejwt": "^0.2"
+                "kelvinmo/simplejwt": "^1.1"
             },
             "default-branch": true,
             "type": "civicrm-ext",
@@ -2788,7 +2784,7 @@
                 }
             ],
             "description": "Google Cloud Identity-Aware Proxy Authentication for CiviCRM Standalone",
-            "time": "2025-04-16T14:03:10+00:00"
+            "time": "2026-03-20T13:55:57+00:00"
         },
         {
             "name": "greenpeace-cee/identitytracker",
@@ -3546,33 +3542,34 @@
         },
         {
             "name": "kelvinmo/simplejwt",
-            "version": "v0.2.5",
+            "version": "v1.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kelvinmo/simplejwt.git",
-                "reference": "c7e2c81d15b4f87c9c122f88a80ce5d90977f62b"
+                "reference": "c633d9d85837e60bdd4c65b4e3a3da12d22c0605"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kelvinmo/simplejwt/zipball/c7e2c81d15b4f87c9c122f88a80ce5d90977f62b",
-                "reference": "c7e2c81d15b4f87c9c122f88a80ce5d90977f62b",
+                "url": "https://api.github.com/repos/kelvinmo/simplejwt/zipball/c633d9d85837e60bdd4c65b4e3a3da12d22c0605",
+                "reference": "c633d9d85837e60bdd4c65b4e3a3da12d22c0605",
                 "shasum": ""
             },
             "require": {
+                "ext-gmp": "*",
                 "ext-hash": "*",
                 "ext-openssl": "*",
-                "php": ">=5.4.0"
+                "php": "^8.0"
             },
             "require-dev": {
-                "ext-bz2": "*",
-                "ext-phar": "*",
-                "phing/phing": "2.*",
-                "phpunit/phpunit": "4.*",
-                "symfony/console": "2.7.*"
+                "consolidation/robo": "^4.0 || ^5.0",
+                "phlak/semver": "^5.0 || ^6.0",
+                "phpstan/phpstan": "^2.0.1",
+                "phpunit/phpunit": "^9.6.33 || ^10.5.63 || ^11.5.50"
             },
-            "bin": [
-                "bin/jwkstool.phar"
-            ],
+            "suggest": {
+                "ext-sodium": "Provides support for OKP (X25519/Ed25519) keys",
+                "kelvinmo/jwkstool": "Command-line tool to manage JSON web keys"
+            },
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -3589,7 +3586,7 @@
                     "email": "kmo@users.sourceforge.net"
                 }
             ],
-            "description": "An simple JSON Web Token library for PHP.",
+            "description": "A simple JSON Web Token library for PHP.",
             "homepage": "https://github.com/kelvinmo/simplejwt",
             "keywords": [
                 "JOSE",
@@ -3598,9 +3595,9 @@
             ],
             "support": {
                 "issues": "https://github.com/kelvinmo/simplejwt/issues",
-                "source": "https://github.com/kelvinmo/simplejwt/tree/master"
+                "source": "https://github.com/kelvinmo/simplejwt/tree/v1.1.1"
             },
-            "time": "2019-06-14T11:01:39+00:00"
+            "time": "2026-03-18T01:26:34+00:00"
         },
         {
             "name": "knplabs/knp-snappy",
@@ -5399,16 +5396,16 @@
         },
         {
             "name": "phpseclib/phpseclib",
-            "version": "3.0.49",
+            "version": "3.0.50",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpseclib/phpseclib.git",
-                "reference": "6233a1e12584754e6b5daa69fe1289b47775c1b9"
+                "reference": "aa6ad8321ed103dc3624fb600a25b66ebf78ec7b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpseclib/phpseclib/zipball/6233a1e12584754e6b5daa69fe1289b47775c1b9",
-                "reference": "6233a1e12584754e6b5daa69fe1289b47775c1b9",
+                "url": "https://api.github.com/repos/phpseclib/phpseclib/zipball/aa6ad8321ed103dc3624fb600a25b66ebf78ec7b",
+                "reference": "aa6ad8321ed103dc3624fb600a25b66ebf78ec7b",
                 "shasum": ""
             },
             "require": {
@@ -5489,7 +5486,7 @@
             ],
             "support": {
                 "issues": "https://github.com/phpseclib/phpseclib/issues",
-                "source": "https://github.com/phpseclib/phpseclib/tree/3.0.49"
+                "source": "https://github.com/phpseclib/phpseclib/tree/3.0.50"
             },
             "funding": [
                 {
@@ -5505,7 +5502,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-01-27T09:17:28+00:00"
+            "time": "2026-03-19T02:57:58+00:00"
         },
         {
             "name": "phpseclib/phpseclib2_compat",

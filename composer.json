@@ -4,7 +4,7 @@
         "composer/installers": "~1.0",
         "cweagans/composer-patches": ">=1.7",
         "civicrm/civicrm-core": "dev-6.10-gp",
-        "civicrm/civicrm-packages": "6.10.x-dev",
+        "civicrm/civicrm-packages": "dev-6.10-gp",
         "civicrm/civicrm-asset-plugin": "~1.1",
         "civicrm/action-provider": "dev-master",
         "civicrm/advancedlogtables": "dev-master",
@@ -196,7 +196,11 @@
         },
         {
             "type": "vcs",
-            "url": "git@github.com:greenpeace-cee/civicrm-core.git"
+            "url": "git@github.com:greenpeace-cee/civicrm-core-private.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:greenpeace-cee/civicrm-packages-private.git"
         },
         {
             "type": "vcs",

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "56ba6d09e4d67c0809e15918854fdfce",
+    "content-hash": "4ddd827feacade56d8b0dfcc0ecb55e4",
     "packages": [
         {
             "name": "adrienrn/php-mimetyper",
@@ -515,12 +515,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:greenpeace-cee/civicrm-core-private.git",
-                "reference": "552c7cf3bb0f01409d5522cc4e27205b9be8301f"
+                "reference": "8860c17f691aa74cd79a034cdaadf02e6ad8c771"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/greenpeace-cee/civicrm-core-private/zipball/552c7cf3bb0f01409d5522cc4e27205b9be8301f",
-                "reference": "552c7cf3bb0f01409d5522cc4e27205b9be8301f",
+                "url": "https://api.github.com/repos/greenpeace-cee/civicrm-core-private/zipball/8860c17f691aa74cd79a034cdaadf02e6ad8c771",
+                "reference": "8860c17f691aa74cd79a034cdaadf02e6ad8c771",
                 "shasum": ""
             },
             "require": {
@@ -1037,7 +1037,7 @@
                 }
             ],
             "description": "Open source constituent relationship management for non-profits, NGOs and advocacy organizations.",
-            "time": "2026-03-20T13:15:19+00:00"
+            "time": "2026-03-24T10:57:03+00:00"
         },
         {
             "name": "civicrm/civicrm-packages",
@@ -1075,6 +1075,66 @@
             "type": "civicrm-ext",
             "description": "Native CiviCRM extension CiviRules",
             "time": "2024-08-27T12:18:59+00:00"
+        },
+        {
+            "name": "civicrm/cli-tools",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/civicrm/civicrm-cli-tools.git",
+                "reference": "00a6b1cedfdd7ae3db53ec7c0b1d4d0b6fff7aa0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/civicrm/civicrm-cli-tools/zipball/00a6b1cedfdd7ae3db53ec7c0b1d4d0b6fff7aa0",
+                "reference": "00a6b1cedfdd7ae3db53ec7c0b1d4d0b6fff7aa0",
+                "shasum": ""
+            },
+            "require": {
+                "civicrm/composer-downloads-plugin": "^3.0 || ^4.0"
+            },
+            "default-branch": true,
+            "bin": [
+                "bin/civistrings",
+                "bin/civix",
+                "bin/cv",
+                "bin/coworker"
+            ],
+            "type": "library",
+            "extra": {
+                "downloads": {
+                    "*": {
+                        "path": "extern/{$id}",
+                        "type": "phar"
+                    },
+                    "civistrings.phar": {
+                        "version": "2022-08-30-c035da67",
+                        "url": "https://download.civicrm.org/civistrings/civistrings.phar-2022-08-30-c035da67"
+                    },
+                    "civix.phar": {
+                        "version": "26.02.0",
+                        "url": "https://download.civicrm.org/civix/civix-26.02.0.phar"
+                    },
+                    "coworker.phar": {
+                        "version": "0.9",
+                        "url": "https://download.civicrm.org/coworker/coworker-0.9.phar"
+                    },
+                    "cv.phar": {
+                        "version": "0.3.71",
+                        "url": "https://download.civicrm.org/cv/cv-0.3.71.phar"
+                    }
+                }
+            },
+            "license": [
+                "AGPL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Tim Otten",
+                    "email": "totten@civicrm.org"
+                }
+            ],
+            "time": "2026-03-20T20:14:14+00:00"
         },
         {
             "name": "civicrm/composer-compile-lib",
@@ -2586,17 +2646,17 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:greenpeace-cee/ecgcheck.git",
-                "reference": "01adb18acbcb1641e26446bdef2f959eaae840a4"
+                "reference": "63cb622af183db64de7b2085cfefbfbb2972451a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/greenpeace-cee/ecgcheck/zipball/01adb18acbcb1641e26446bdef2f959eaae840a4",
-                "reference": "01adb18acbcb1641e26446bdef2f959eaae840a4",
+                "url": "https://api.github.com/repos/greenpeace-cee/ecgcheck/zipball/63cb622af183db64de7b2085cfefbfbb2972451a",
+                "reference": "63cb622af183db64de7b2085cfefbfbb2972451a",
                 "shasum": ""
             },
             "default-branch": true,
             "type": "civicrm-ext",
-            "time": "2025-01-29T11:14:26+00:00"
+            "time": "2026-03-24T09:16:29+00:00"
         },
         {
             "name": "greenpeace-cee/emailnotification",
@@ -5506,23 +5566,23 @@
         },
         {
             "name": "phpseclib/phpseclib2_compat",
-            "version": "1.0.6",
+            "version": "1.0.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpseclib/phpseclib2_compat.git",
-                "reference": "90976f25d6c2ff936878624b9cfaa322db11dde7"
+                "reference": "f7649bb67b53b675cbe320ce37f7241f53b3c574"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpseclib/phpseclib2_compat/zipball/90976f25d6c2ff936878624b9cfaa322db11dde7",
-                "reference": "90976f25d6c2ff936878624b9cfaa322db11dde7",
+                "url": "https://api.github.com/repos/phpseclib/phpseclib2_compat/zipball/f7649bb67b53b675cbe320ce37f7241f53b3c574",
+                "reference": "f7649bb67b53b675cbe320ce37f7241f53b3c574",
                 "shasum": ""
             },
             "require": {
                 "phpseclib/phpseclib": "^3.0"
             },
             "provide": {
-                "phpseclib/phpseclib": "2.0.47"
+                "phpseclib/phpseclib": "2.0.52"
             },
             "require-dev": {
                 "phpunit/phpunit": "^5.7|^6.0|^9.4"
@@ -5550,7 +5610,7 @@
                 "issues": "https://github.com/phpseclib/phpseclib2_compat/issues",
                 "source": "https://github.com/phpseclib/phpseclib2_compat"
             },
-            "time": "2024-02-26T14:37:15+00:00"
+            "time": "2026-03-20T15:15:13+00:00"
         },
         {
             "name": "phrity/net-stream",
@@ -8999,6 +9059,7 @@
         "civicrm/civicrm-core": 20,
         "civicrm/civicrm-packages": 20,
         "civicrm/civirules": 20,
+        "civicrm/cli-tools": 20,
         "civicrm/extendedreport": 20,
         "civicrm/form-processor": 20,
         "civicrm/mjwshared": 20,

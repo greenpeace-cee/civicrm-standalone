@@ -56,6 +56,7 @@
         "greenpeace-cee/segmentation": "dev-master",
         "greenpeace-cee/sepa": "dev-upstream",
         "greenpeace-cee/sepacustom": "dev-master",
+        "greenpeace-cee/sepaoptimizedbatcher": "dev-main",
         "greenpeace-cee/sktokens": "dev-main",
         "greenpeace-cee/streetimport": "dev-master",
         "greenpeace-cee/superset": "dev-master",
@@ -338,6 +339,10 @@
         {
             "type": "vcs",
             "url": "git@github.com:greenpeace-cee/searchactiondesigner.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:greenpeace-cee/sepaoptimizedbatcher.git"
         },
         {
             "type": "vcs",

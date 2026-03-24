@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4ddd827feacade56d8b0dfcc0ecb55e4",
+    "content-hash": "2f440a0504de469cda3b8e85a5a2a051",
     "packages": [
         {
             "name": "adrienrn/php-mimetyper",
@@ -3053,12 +3053,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:greenpeace-cee/org.project60.sepa.git",
-                "reference": "ae67d889373d7ac6f54a13583365e9a28a92927c"
+                "reference": "c4d6fef2f5f79a825da5cb2ee74b0e9b1a1606d7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/greenpeace-cee/org.project60.sepa/zipball/ae67d889373d7ac6f54a13583365e9a28a92927c",
-                "reference": "ae67d889373d7ac6f54a13583365e9a28a92927c",
+                "url": "https://api.github.com/repos/greenpeace-cee/org.project60.sepa/zipball/c4d6fef2f5f79a825da5cb2ee74b0e9b1a1606d7",
+                "reference": "c4d6fef2f5f79a825da5cb2ee74b0e9b1a1606d7",
                 "shasum": ""
             },
             "type": "civicrm-ext",
@@ -3081,6 +3081,24 @@
             "default-branch": true,
             "type": "civicrm-ext",
             "time": "2024-12-09T13:08:08+00:00"
+        },
+        {
+            "name": "greenpeace-cee/sepaoptimizedbatcher",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:greenpeace-cee/sepaoptimizedbatcher.git",
+                "reference": "85ecc1fe3e3966296223c13deb18fe5ad62cd867"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/greenpeace-cee/sepaoptimizedbatcher/zipball/85ecc1fe3e3966296223c13deb18fe5ad62cd867",
+                "reference": "85ecc1fe3e3966296223c13deb18fe5ad62cd867",
+                "shasum": ""
+            },
+            "default-branch": true,
+            "type": "civicrm-ext",
+            "time": "2026-03-24T15:00:44+00:00"
         },
         {
             "name": "greenpeace-cee/sktokens",
@@ -9105,6 +9123,7 @@
         "greenpeace-cee/segmentation": 20,
         "greenpeace-cee/sepa": 20,
         "greenpeace-cee/sepacustom": 20,
+        "greenpeace-cee/sepaoptimizedbatcher": 20,
         "greenpeace-cee/sktokens": 20,
         "greenpeace-cee/streetimport": 20,
         "greenpeace-cee/superset": 20,

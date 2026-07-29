@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2f440a0504de469cda3b8e85a5a2a051",
+    "content-hash": "2af658cb0fe25f09d382d7fe520a9134",
     "packages": [
         {
             "name": "adrienrn/php-mimetyper",
@@ -2814,6 +2814,24 @@
             "default-branch": true,
             "type": "civicrm-ext",
             "time": "2024-12-11T13:43:31+00:00"
+        },
+        {
+            "name": "greenpeace-cee/hubspot",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:greenpeace-cee/hubspot.git",
+                "reference": "00600bd0f2397d257087f21274b2742175869df6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/greenpeace-cee/hubspot/zipball/00600bd0f2397d257087f21274b2742175869df6",
+                "reference": "00600bd0f2397d257087f21274b2742175869df6",
+                "shasum": ""
+            },
+            "default-branch": true,
+            "type": "civicrm-ext",
+            "time": "2026-07-09T12:38:19+00:00"
         },
         {
             "name": "greenpeace-cee/iap_auth",
@@ -9177,6 +9195,7 @@
         "greenpeace-cee/gpapi": 20,
         "greenpeace-cee/greenpeace_contribute": 20,
         "greenpeace-cee/hlrlookup": 20,
+        "greenpeace-cee/hubspot": 20,
         "greenpeace-cee/iap_auth": 20,
         "greenpeace-cee/identitytracker": 20,
         "greenpeace-cee/mailingwork": 20,

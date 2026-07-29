@@ -67,6 +67,7 @@
         "greenpeace-cee/xcm": "dev-master",
         "greenpeace-cee/xcmtools": "dev-master",
         "greenpeace-cee/xdedupe": "dev-master",
+        "greenpeace-cee/hubspot": "dev-master",
         "systopia/de.systopia.civioffice": "dev-master",
         "systopia/de.systopia.eck": "dev-master"
     },
@@ -367,6 +368,10 @@
         {
             "type": "vcs",
             "url": "git@github.com:greenpeace-cee/xcmtools.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:greenpeace-cee/hubspot.git"
         },
         {
             "type": "vcs",

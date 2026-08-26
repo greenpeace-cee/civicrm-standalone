@@ -65,7 +65,8 @@ for line in $(cv ext:list --columns=key,path --local --out=csv); do
 done
 
 # Perform necessary database upgrades
-cv ext:upgrade-db
+cv upgrade:db
+cv upgrade:db --mode=ext
 composer civicrm:publish
 
 # --- GPAT-specific settings ------------------------------------------------- #
@@ -122,6 +123,10 @@ cv api4 Setting.set \
     +v sdd_no_draft_xml="0" \
     +v sdd_skip_closed="1" \
     +v sepacustom_reference_prefix="GP"
+
+# Extension settings: riverlea
+cv api4 Setting.set +v riverlea_dark_mode_backend="light" \
+    +v riverlea_dark_mode_frontend="light"
 
 # Import data from Statistik Austria for de.systopia.postcodeat
 cv api PostcodeAT.importstatistikaustria

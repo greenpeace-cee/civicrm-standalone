@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b943fd0d11d5307c7ae9f545c93be3c1",
+    "content-hash": "b99649f5dc57f6cebb462747deb3de60",
     "packages": [
         {
             "name": "adrienrn/php-mimetyper",
@@ -2551,6 +2551,34 @@
             "default-branch": true,
             "type": "civicrm-ext",
             "time": "2026-07-29T13:13:54+00:00"
+        },
+        {
+            "name": "greenpeace-cee/danube",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:greenpeace-cee/danube",
+                "reference": "d3a729b7aff23b647e8a17f73692368184dfe8a5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/greenpeace-cee/danube/zipball/d3a729b7aff23b647e8a17f73692368184dfe8a5",
+                "reference": "d3a729b7aff23b647e8a17f73692368184dfe8a5",
+                "shasum": ""
+            },
+            "default-branch": true,
+            "type": "civicrm-ext",
+            "license": [
+                "AGPL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Patrick Figel",
+                    "email": "pfigel@greenpeace.org"
+                }
+            ],
+            "description": "CiviCRM Danube theme",
+            "time": "2026-08-19T14:04:32+00:00"
         },
         {
             "name": "greenpeace-cee/dataro",
@@ -9165,6 +9193,7 @@
         "greenpeace-cee/contacteditor": 20,
         "greenpeace-cee/contactinactive": 20,
         "greenpeace-cee/contract": 20,
+        "greenpeace-cee/danube": 20,
         "greenpeace-cee/dataro": 20,
         "greenpeace-cee/doctorwhen": 20,
         "greenpeace-cee/donutapp": 20,

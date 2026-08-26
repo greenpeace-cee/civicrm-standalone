@@ -124,9 +124,11 @@ cv api4 Setting.set \
     +v sdd_skip_closed="1" \
     +v sepacustom_reference_prefix="GP"
 
-# Extension settings: riverlea
+# Extension settings: riverlea / danube
 cv api4 Setting.set +v riverlea_dark_mode_backend="light" \
-    +v riverlea_dark_mode_frontend="light"
+    +v riverlea_dark_mode_frontend="light" \
+    +v theme_frontend="danube" \
+    +v theme_backend="danube"
 
 # Import data from Statistik Austria for de.systopia.postcodeat
 cv api PostcodeAT.importstatistikaustria

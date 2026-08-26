@@ -2432,17 +2432,17 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:greenpeace-cee/de.systopia.bpk.git",
-                "reference": "c8ddeabd63b28f9c8202df174e3436e055d7bb33"
+                "reference": "463ab97fbac598e5567886b1476cae2b61c8646e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/greenpeace-cee/de.systopia.bpk/zipball/c8ddeabd63b28f9c8202df174e3436e055d7bb33",
-                "reference": "c8ddeabd63b28f9c8202df174e3436e055d7bb33",
+                "url": "https://api.github.com/repos/greenpeace-cee/de.systopia.bpk/zipball/463ab97fbac598e5567886b1476cae2b61c8646e",
+                "reference": "463ab97fbac598e5567886b1476cae2b61c8646e",
                 "shasum": ""
             },
             "default-branch": true,
             "type": "civicrm-ext",
-            "time": "2026-07-29T16:06:13+00:00"
+            "time": "2026-08-26T16:49:43+00:00"
         },
         {
             "name": "greenpeace-cee/campaign",

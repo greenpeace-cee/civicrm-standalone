@@ -515,12 +515,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:greenpeace-cee/civicrm-core-private.git",
-                "reference": "35c8cfa8b28a0193ae20c8d696471d11892c9f4b"
+                "reference": "9c3e1aa6f63c8e31dfdc9f057ba575518ec9b048"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/greenpeace-cee/civicrm-core-private/zipball/35c8cfa8b28a0193ae20c8d696471d11892c9f4b",
-                "reference": "35c8cfa8b28a0193ae20c8d696471d11892c9f4b",
+                "url": "https://api.github.com/repos/greenpeace-cee/civicrm-core-private/zipball/9c3e1aa6f63c8e31dfdc9f057ba575518ec9b048",
+                "reference": "9c3e1aa6f63c8e31dfdc9f057ba575518ec9b048",
                 "shasum": ""
             },
             "require": {
@@ -1038,7 +1038,7 @@
                 }
             ],
             "description": "Open source constituent relationship management for non-profits, NGOs and advocacy organizations.",
-            "time": "2026-07-09T13:19:25+00:00"
+            "time": "2026-08-26T12:16:15+00:00"
         },
         {
             "name": "civicrm/civicrm-packages",
@@ -5532,16 +5532,16 @@
         },
         {
             "name": "phpseclib/phpseclib",
-            "version": "3.0.56",
+            "version": "3.0.57",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpseclib/phpseclib.git",
-                "reference": "7adbbe38cde25e2df2116dbf2673c407e24fa305"
+                "reference": "d17e0ddaeaf6f22f7e007cbb437d78792fe2a0e4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpseclib/phpseclib/zipball/7adbbe38cde25e2df2116dbf2673c407e24fa305",
-                "reference": "7adbbe38cde25e2df2116dbf2673c407e24fa305",
+                "url": "https://api.github.com/repos/phpseclib/phpseclib/zipball/d17e0ddaeaf6f22f7e007cbb437d78792fe2a0e4",
+                "reference": "d17e0ddaeaf6f22f7e007cbb437d78792fe2a0e4",
                 "shasum": ""
             },
             "require": {
@@ -5622,7 +5622,7 @@
             ],
             "support": {
                 "issues": "https://github.com/phpseclib/phpseclib/issues",
-                "source": "https://github.com/phpseclib/phpseclib/tree/3.0.56"
+                "source": "https://github.com/phpseclib/phpseclib/tree/3.0.57"
             },
             "funding": [
                 {
@@ -5638,7 +5638,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-08-03T04:36:50+00:00"
+            "time": "2026-08-26T12:13:21+00:00"
         },
         {
             "name": "phpseclib/phpseclib2_compat",

@@ -53,7 +53,7 @@ cv ext:enable \
     "legacycustomsearches" \
     "oauth-client" \
     "org.civicrm.afform_admin" \
-    "org.civicrm.afform-html" \
+    "org.civicrm.afform-html"
 
 # Install all extensions in the ext/ directory
 for line in $(cv ext:list --columns=key,path --local --out=csv); do
@@ -65,8 +65,7 @@ for line in $(cv ext:list --columns=key,path --local --out=csv); do
 done
 
 # Perform necessary database upgrades
-cv upgrade:db
-cv upgrade:db --mode=ext
+cv ext:upgrade-db
 composer civicrm:publish
 
 # --- GPAT-specific settings ------------------------------------------------- #

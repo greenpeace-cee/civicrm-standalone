@@ -53,7 +53,7 @@ cv ext:enable \
     "legacycustomsearches" \
     "oauth-client" \
     "org.civicrm.afform_admin" \
-    "org.civicrm.afform-html" \
+    "org.civicrm.afform-html"
 
 # Install all extensions in the ext/ directory
 for line in $(cv ext:list --columns=key,path --local --out=csv); do
@@ -122,6 +122,12 @@ cv api4 Setting.set \
     +v sdd_no_draft_xml="0" \
     +v sdd_skip_closed="1" \
     +v sepacustom_reference_prefix="GP"
+
+# Extension settings: riverlea / danube
+cv api4 Setting.set +v riverlea_dark_mode_backend="light" \
+    +v riverlea_dark_mode_frontend="light" \
+    +v theme_frontend="danube" \
+    +v theme_backend="danube"
 
 # Import data from Statistik Austria for de.systopia.postcodeat
 cv api PostcodeAT.importstatistikaustria

@@ -7,15 +7,14 @@
         "civicrm/civicrm-core": "dev-6.10-gp",
         "civicrm/civicrm-packages": "dev-6.10-gp",
         "civicrm/civicrm-asset-plugin": "~1.1",
-        "civicrm/action-provider": "dev-master",
+        "civicrm/action-provider": "~1.202",
         "civicrm/advancedlogtables": "dev-master",
         "civicrm/banking": "dev-master",
         "civicrm/civirules": "dev-master",
         "civicrm/extendedreport": "dev-master",
-        "civicrm/form-processor": "dev-main",
+        "civicrm/form-processor": "~3.3",
         "civicrm/mjwshared": "dev-master",
         "civicrm/recentmenu": "dev-master",
-        "civicrm/riverlea": "dev-main",
         "civicrm/smsapi": "dev-main",
         "civicrm/sqltasks": "dev-master",
         "greenpeace-cee/adyen": "dev-main",
@@ -30,6 +29,7 @@
         "greenpeace-cee/contactinactive": "dev-master",
         "greenpeace-cee/contract": "dev-master",
         "greenpeace-cee/dataro": "dev-test-composer",
+        "greenpeace-cee/danube": "dev-main",
         "greenpeace-cee/doctorwhen": "dev-master",
         "greenpeace-cee/donutapp": "dev-master",
         "greenpeace-cee/droptrigger": "dev-master",
@@ -67,6 +67,7 @@
         "greenpeace-cee/xcm": "dev-master",
         "greenpeace-cee/xcmtools": "dev-master",
         "greenpeace-cee/xdedupe": "dev-master",
+        "greenpeace-cee/hubspot": "dev-master",
         "systopia/de.systopia.civioffice": "dev-master",
         "systopia/de.systopia.eck": "dev-master"
     },
@@ -179,6 +180,10 @@
         {
             "type": "vcs",
             "url": "git@github.com:greenpeace-cee/dataro"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:greenpeace-cee/danube"
         },
         {
             "type": "vcs",
@@ -370,6 +375,10 @@
         },
         {
             "type": "vcs",
+            "url": "git@github.com:greenpeace-cee/hubspot.git"
+        },
+        {
+            "type": "vcs",
             "url": "https://github.com/civicrm/civicrm-cli-tools.git"
         },
         {
@@ -379,10 +388,6 @@
         {
             "type": "vcs",
             "url": "https://lab.civicrm.org/extensions/form-processor.git"
-        },
-        {
-            "type": "vcs",
-            "url": "https://lab.civicrm.org/extensions/riverlea.git"
         }
     ]
 }

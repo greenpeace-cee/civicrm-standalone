@@ -2446,17 +2446,17 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:greenpeace-cee/de.systopia.bpk.git",
-                "reference": "c8ddeabd63b28f9c8202df174e3436e055d7bb33"
+                "reference": "463ab97fbac598e5567886b1476cae2b61c8646e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/greenpeace-cee/de.systopia.bpk/zipball/c8ddeabd63b28f9c8202df174e3436e055d7bb33",
-                "reference": "c8ddeabd63b28f9c8202df174e3436e055d7bb33",
+                "url": "https://api.github.com/repos/greenpeace-cee/de.systopia.bpk/zipball/463ab97fbac598e5567886b1476cae2b61c8646e",
+                "reference": "463ab97fbac598e5567886b1476cae2b61c8646e",
                 "shasum": ""
             },
             "default-branch": true,
             "type": "civicrm-ext",
-            "time": "2026-07-29T16:06:13+00:00"
+            "time": "2026-08-26T16:49:43+00:00"
         },
         {
             "name": "greenpeace-cee/campaign",
@@ -2821,17 +2821,17 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:greenpeace-cee/iap_auth.git",
-                "reference": "f50bc65dfc9e1ebaf06bd101f29e5a5a7e6a6dd6"
+                "reference": "67db36a525b1d0cfea36fa50e70b6bf10cea8b63"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/greenpeace-cee/iap_auth/zipball/f50bc65dfc9e1ebaf06bd101f29e5a5a7e6a6dd6",
-                "reference": "f50bc65dfc9e1ebaf06bd101f29e5a5a7e6a6dd6",
+                "url": "https://api.github.com/repos/greenpeace-cee/iap_auth/zipball/67db36a525b1d0cfea36fa50e70b6bf10cea8b63",
+                "reference": "67db36a525b1d0cfea36fa50e70b6bf10cea8b63",
                 "shasum": ""
             },
             "require": {
-                "google/auth": "^1.46",
-                "kelvinmo/simplejwt": "^1.1"
+                "firebase/php-jwt": "^6.10 || ^7.0",
+                "php": ">=8.1"
             },
             "default-branch": true,
             "type": "civicrm-ext",
@@ -2845,7 +2845,7 @@
                 }
             ],
             "description": "Google Cloud Identity-Aware Proxy Authentication for CiviCRM Standalone",
-            "time": "2026-03-20T13:55:57+00:00"
+            "time": "2026-10-18T11:11:41+00:00"
         },
         {
             "name": "greenpeace-cee/identitytracker",
@@ -3089,12 +3089,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:greenpeace-cee/sepaoptimizedbatcher.git",
-                "reference": "85ecc1fe3e3966296223c13deb18fe5ad62cd867"
+                "reference": "353102b3f28ab92e670c7e8840cc5d7a3ef8b4a0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/greenpeace-cee/sepaoptimizedbatcher/zipball/85ecc1fe3e3966296223c13deb18fe5ad62cd867",
-                "reference": "85ecc1fe3e3966296223c13deb18fe5ad62cd867",
+                "url": "https://api.github.com/repos/greenpeace-cee/sepaoptimizedbatcher/zipball/353102b3f28ab92e670c7e8840cc5d7a3ef8b4a0",
+                "reference": "353102b3f28ab92e670c7e8840cc5d7a3ef8b4a0",
                 "shasum": ""
             },
             "default-branch": true,
@@ -3623,65 +3623,6 @@
                 }
             ],
             "time": "2026-07-16T22:23:49+00:00"
-        },
-        {
-            "name": "kelvinmo/simplejwt",
-            "version": "v1.1.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/kelvinmo/simplejwt.git",
-                "reference": "fad278fee437cbe36517e1c420422a4b11fb0765"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/kelvinmo/simplejwt/zipball/fad278fee437cbe36517e1c420422a4b11fb0765",
-                "reference": "fad278fee437cbe36517e1c420422a4b11fb0765",
-                "shasum": ""
-            },
-            "require": {
-                "ext-gmp": "*",
-                "ext-hash": "*",
-                "ext-openssl": "*",
-                "php": "^8.0"
-            },
-            "require-dev": {
-                "consolidation/robo": "^4.0 || ^5.0",
-                "phlak/semver": "^5.0 || ^6.0",
-                "phpstan/phpstan": "^2.0.1",
-                "phpunit/phpunit": "^9.6.33 || ^10.5.63 || ^11.5.50"
-            },
-            "suggest": {
-                "ext-sodium": "Provides support for OKP (X25519/Ed25519) keys",
-                "kelvinmo/jwkstool": "Command-line tool to manage JSON web keys"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "SimpleJWT\\": "src/SimpleJWT"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Kelvin Mo",
-                    "email": "kmo@users.sourceforge.net"
-                }
-            ],
-            "description": "A simple JSON Web Token library for PHP.",
-            "homepage": "https://github.com/kelvinmo/simplejwt",
-            "keywords": [
-                "JOSE",
-                "JWE",
-                "jwt"
-            ],
-            "support": {
-                "issues": "https://github.com/kelvinmo/simplejwt/issues",
-                "source": "https://github.com/kelvinmo/simplejwt/tree/v1.1.2"
-            },
-            "time": "2026-05-01T22:37:13+00:00"
         },
         {
             "name": "knplabs/knp-snappy",

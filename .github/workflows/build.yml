@@ -1,0 +1,153 @@
+name: "Build"
+
+# Builds this project exactly as composer.lock describes it (core, patches,
+# all extensions), runs post-install.sh and a set of smoke checks. This is the
+# integration test for every change to composer.json/composer.lock, patches/
+# or post-install.sh.
+#
+# Secrets:
+#   COMPOSER_GITHUB_TOKEN  Token with read access to the private repositories
+#                          referenced in composer.json (e.g. a fine-grained PAT
+#                          or GitHub App token of a machine user). git is told
+#                          to use it for every github.com URL, including the
+#                          git@github.com: SSH URLs in composer.json, so the
+#                          runner needs no SSH key.
+
+on:
+  push:
+    branches: [gpat]
+  pull_request:
+  workflow_dispatch:
+
+env:
+  PHP: "8.1"
+  DATABASE: "mariadb:11.4"
+
+jobs:
+  build:
+    name: "Build and smoke test"
+    runs-on: ubuntu-24.04
+    timeout-minutes: 90
+
+    services:
+      database:
+        image: mariadb:11.4
+        env:
+          MARIADB_ALLOW_EMPTY_ROOT_PASSWORD: "yes"
+        ports:
+          - "3306:3306"
+        options: >-
+          --health-cmd="healthcheck.sh --connect --innodb_initialized"
+          --health-interval="10s"
+          --health-timeout="5s"
+          --health-retries="3"
+
+    steps:
+      - id: checkout
+        name: "Clone this repository"
+        uses: actions/checkout@v4
+
+      - id: git-auth
+        name: "Authenticate git against github.com"
+        env:
+          TOKEN: ${{ secrets.COMPOSER_GITHUB_TOKEN }}
+        run: |
+          if [ -z "$TOKEN" ]; then
+            echo "::warning::COMPOSER_GITHUB_TOKEN is not set; private repositories will not be reachable."
+            TOKEN="${{ github.token }}"
+          fi
+          # Rewrite SSH URLs to HTTPS and answer credential prompts from the
+          # environment, so the token never lands in a file.
+          git config --global url."https://github.com/".insteadOf "git@github.com:"
+          git config --global --add url."https://github.com/".insteadOf "ssh://git@github.com/"
+          git config --global credential.helper '!f() { echo "username=x-access-token"; echo "password=$COMPOSER_GITHUB_TOKEN"; }; f'
+          echo "COMPOSER_GITHUB_TOKEN=$TOKEN" >> "$GITHUB_ENV"
+          echo "GIT_TERMINAL_PROMPT=0" >> "$GITHUB_ENV"
+
+      - id: install-deps
+        name: "Install PHP ${{ env.PHP }}, Apache and Node"
+        run: |
+          sudo add-apt-repository -y ppa:ondrej/php
+          sudo apt-get update
+          sudo apt-get install -y lynx mariadb-client "php$PHP" "php$PHP-"{bcmath,curl,gd,intl,mbstring,mysql,xml,zip}
+          sudo apt-get install -y --no-install-recommends "libapache2-mod-php$PHP"
+          sudo update-alternatives --set php "/usr/bin/php$PHP"
+          sudo a2enmod rewrite
+          # Run Apache as the runner user so files written by the site stay replaceable.
+          sudo sed -i "s/^export APACHE_RUN_USER=.*/export APACHE_RUN_USER=$(id -un)/; s/^export APACHE_RUN_GROUP=.*/export APACHE_RUN_GROUP=$(id -gn)/" /etc/apache2/envvars
+          sudo systemctl restart apache2
+          cd "$HOME"
+          wget -q https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh
+          bash ./install.sh
+          . ./.nvm/nvm.sh
+          nvm install 22
+
+      - id: install-buildkit
+        name: "Install CiviCRM buildkit"
+        run: |
+          git clone --quiet https://github.com/civicrm/civicrm-buildkit.git "$HOME/buildkit"
+          "$HOME/buildkit/bin/civi-download-tools"
+          echo "$HOME/buildkit/bin" >> "$GITHUB_PATH"
+
+      - id: amp-config
+        name: "Configure amp"
+        run: |
+          amp config:set --db_type="mysql_dsn"
+          amp config:set --hosts_type="file"
+          amp config:set --httpd_type="apache24"
+          amp config:set --httpd_restart_command="sudo /usr/sbin/apachectl graceful"
+          amp config:set --mysql_dsn="mysql://root@localhost:3306"
+          amp config:set --perm_type="worldWritable"
+          sudo chmod 666 "/etc/apache2/apache2.conf"
+          echo "IncludeOptional $HOME/.amp/apache.d/*.conf" >> "/etc/apache2/apache2.conf"
+          amp test
+
+      - id: composer-cache
+        name: "Restore composer cache"
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/composer
+          key: composer-${{ runner.os }}-${{ hashFiles('composer.lock') }}
+          restore-keys: |
+            composer-${{ runner.os }}-
+
+      - id: build
+        name: "Build the site from composer.lock and run post-install.sh"
+        run: |
+          export CIVIBUILD_PATH="$GITHUB_WORKSPACE/ci/civibuild"
+          export GP_STANDALONE_SRC="$GITHUB_WORKSPACE"
+          civibuild create gpat \
+            --type standalone-gp \
+            --title "GP AT (CI)" \
+            --url "http://gpat.test:8080" \
+            --admin-user admin \
+            --admin-pass admin \
+            --admin-email admin@example.org
+          echo "BUILD_DIR=$HOME/buildkit/build/gpat/web" >> "$GITHUB_ENV"
+
+      - id: smoke
+        name: "Smoke checks"
+        run: |
+          cd "$BUILD_DIR"
+          # Same credentials as --admin-user/--admin-pass above.
+          DEMO_USER=admin DEMO_PASS=admin ./ci/smoke.sh
+
+      - id: logs
+        name: "Collect logs"
+        if: ${{ failure() }}
+        run: |
+          mkdir -p "$RUNNER_TEMP/logs"
+          cp -r "$BUILD_DIR"/private/log/. "$RUNNER_TEMP/logs/civicrm" 2>/dev/null || true
+          cp "$HOME"/.amp/log/* "$RUNNER_TEMP/logs/" 2>/dev/null || true
+          sudo cp /var/log/apache2/error.log "$RUNNER_TEMP/logs/apache-error.log" 2>/dev/null || true
+          # Files copied with sudo are root-owned and unreadable for the upload step.
+          sudo chown -R "$(id -u):$(id -g)" "$RUNNER_TEMP/logs"
+
+      - id: upload-logs
+        name: "Upload logs"
+        if: ${{ failure() }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: logs
+          path: ${{ runner.temp }}/logs
+          if-no-files-found: ignore

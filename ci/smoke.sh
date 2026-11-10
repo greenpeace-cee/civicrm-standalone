@@ -44,7 +44,9 @@ if [ -z "$problems" ]; then ok "no unexpected system-check errors"; else bad "sy
 base=${url%/civicrm/login}
 user=${DEMO_USER:-demo}
 jar=$(mktemp)
+## The ajax endpoint only accepts requests marked as coming from a browser script.
 login=$(curl -sS -c "$jar" -b "$jar" -X POST "$base/civicrm/ajax/api4/User/login" \
+  -H "X-Requested-With: XMLHttpRequest" \
   -d "params={\"identifier\":\"$user\",\"password\":\"${DEMO_PASS:-demo}\"}" || true)
 status=$(curl -sS -b "$jar" -o /dev/null -w '%{http_code}' "$base/civicrm/dashboard" || true)
 rm -f "$jar"

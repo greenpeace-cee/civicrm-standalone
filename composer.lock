@@ -3022,16 +3022,16 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:greenpeace-cee/org.project60.sepa.git",
-                "reference": "c4d6fef2f5f79a825da5cb2ee74b0e9b1a1606d7"
+                "reference": "ff4bf6f82028471f6c004f291d25c021de56de5e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/greenpeace-cee/org.project60.sepa/zipball/c4d6fef2f5f79a825da5cb2ee74b0e9b1a1606d7",
-                "reference": "c4d6fef2f5f79a825da5cb2ee74b0e9b1a1606d7",
+                "url": "https://api.github.com/repos/greenpeace-cee/org.project60.sepa/zipball/ff4bf6f82028471f6c004f291d25c021de56de5e",
+                "reference": "ff4bf6f82028471f6c004f291d25c021de56de5e",
                 "shasum": ""
             },
             "type": "civicrm-ext",
-            "time": "2025-01-09T12:50:27+00:00"
+            "time": "2024-12-11T13:52:54+00:00"
         },
         {
             "name": "greenpeace-cee/sepacustom",

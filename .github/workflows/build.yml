@@ -119,13 +119,17 @@ jobs:
           civibuild create gpat \
             --type standalone-gp \
             --title "GP AT (CI)" \
-            --url "http://gpat.test:8080"
+            --url "http://gpat.test:8080" \
+            --admin-user admin \
+            --admin-pass admin \
+            --admin-email admin@example.org
           echo "BUILD_DIR=$HOME/buildkit/build/gpat/web" >> "$GITHUB_ENV"
 
       - id: smoke
         name: "Smoke checks"
         run: |
           cd "$BUILD_DIR"
+          # Same credentials as --admin-user/--admin-pass above.
           DEMO_USER=admin DEMO_PASS=admin ./ci/smoke.sh
 
       - id: logs

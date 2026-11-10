@@ -4,12 +4,12 @@
         "composer/installers": "~1.0",
         "cweagans/composer-patches": ">=1.7",
         "civicrm/cli-tools": "dev-master",
-        "civicrm/civicrm-core": "dev-6.10-gp",
-        "civicrm/civicrm-packages": "dev-6.10-gp",
+        "civicrm/civicrm-core": "dev-6.10-gp as 6.10.x-dev",
+        "civicrm/civicrm-packages": "dev-6.10-gp as 6.10.x-dev",
         "civicrm/civicrm-asset-plugin": "~1.1",
-        "civicrm/action-provider": "dev-master",
+        "civicrm/action-provider": "dev-main",
         "civicrm/advancedlogtables": "dev-master",
-        "civicrm/banking": "dev-master",
+        "project60/org.project60.banking": "dev-master",
         "civicrm/civirules": "dev-master",
         "civicrm/extendedreport": "dev-master",
         "civicrm/form-processor": "dev-main",
@@ -74,7 +74,14 @@
         "platform": {
             "php": "8.1"
         },
-        "preferred-install": "source",
+        "preferred-install": {
+            "civicrm/*": "source",
+            "greenpeace-cee/*": "source",
+            "project60/*": "source",
+            "systopia/*": "source",
+            "b-connect/*": "source",
+            "*": "dist"
+        },
         "use-github-api": false,
         "allow-plugins": {
             "civicrm/civicrm-asset-plugin": true,

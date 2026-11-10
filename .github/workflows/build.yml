@@ -136,6 +136,8 @@ jobs:
           cp -r "$BUILD_DIR"/private/log/. "$RUNNER_TEMP/logs/civicrm" 2>/dev/null || true
           cp "$HOME"/.amp/log/* "$RUNNER_TEMP/logs/" 2>/dev/null || true
           sudo cp /var/log/apache2/error.log "$RUNNER_TEMP/logs/apache-error.log" 2>/dev/null || true
+          # Files copied with sudo are root-owned and unreadable for the upload step.
+          sudo chown -R "$(id -u):$(id -g)" "$RUNNER_TEMP/logs"
 
       - id: upload-logs
         name: "Upload logs"
